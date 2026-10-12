@@ -200,6 +200,30 @@
     { "id": "spring-reset", "name": "Spring Reset (Go Mag feature)", "window": "Sep–Oct", "theme": "Gut health, energy, pantry swaps", "assets": ["poster-spring-reset", "shelf-talker-spring-reset", "social-tile-spring-reset", "banner-spring-reset", "gomag-cover-current"] },
     { "id": "rewards-evergreen", "name": "Go Vita Rewards (always-on)", "window": "Year-round", "theme": "Earn & redeem points, member bonus offers", "assets": ["logo-rewards"] }
   ],
+  "personalisedExamples": [
+    {
+      "id": "poster-winter-wellness-immune-fremantle",
+      "title": "Winter Wellness immune poster — Go Vita Fremantle",
+      "basedOn": "poster-winter-wellness-immune",
+      "memberId": "GV-1012",
+      "store": "Go Vita Fremantle",
+      "format": "SVG (vector, print-ready A4 portrait)",
+      "file": "assets/marketing/poster-winter-wellness-immune-fremantle.svg",
+      "description": "Store-personalised example: immune window poster branded for Go Vita Fremantle (Vitamin D3 + C + Zinc). Demonstrates the 'add your store name' service.",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "social-tile-immune-fremantle",
+      "title": "Immune social tile — Go Vita Fremantle",
+      "basedOn": "social-tile-immune",
+      "memberId": "GV-1012",
+      "store": "Go Vita Fremantle",
+      "format": "SVG (vector, 1:1 square)",
+      "file": "assets/marketing/social-tile-immune-fremantle.svg",
+      "description": "Store-personalised example: immune social tile branded for Go Vita Fremantle (Vitamin D3 · C · Zinc).",
+      "updated": "2026-10-12"
+    }
+  ],
   "testimonials": [
     { "memberId": "GV-1023", "member": "Go Vita Toowoomba, Regional QLD", "quote": "The seasonal poster kits make our window look professional in minutes — we swap them every quarter.", "rating": 5 },
     { "memberId": "GV-1052", "member": "Go Vita Geelong, Regional VIC", "quote": "Shelf talkers lift our staff-pick sales noticeably. Customers trust the recommendation.", "rating": 5 },
