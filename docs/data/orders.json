@@ -88,6 +88,28 @@
       "itemCount": 30
     },
     {
+      "orderId": "SO-24823",
+      "memberId": "GV-1012",
+      "store": "Go Vita Fremantle",
+      "state": "WA",
+      "tier": "Silver",
+      "orderDate": "2026-10-12",
+      "deliveryStatus": "Processing",
+      "carrier": null,
+      "tracking": null,
+      "lineItems": [
+        { "sku": "GV-VIT-0102", "name": "VitaWell Vitamin D3 1000IU 250 caps", "category": "Vitamins & Supplements", "qty": 120, "unitWholesale": 12.9, "lineTotal": 1548 },
+        { "sku": "GV-VIT-0103", "name": "VitaWell High-Strength Vitamin C 1000mg 90 tabs", "category": "Vitamins & Supplements", "qty": 80, "unitWholesale": 9.75, "lineTotal": 780 }
+      ],
+      "subtotalExGst": 2328,
+      "tierDiscountPct": 6,
+      "tierDiscount": 139.68,
+      "freight": 0,
+      "gst": 218.83,
+      "totalIncGst": 2407.15,
+      "itemCount": 200
+    },
+    {
       "orderId": "SO-24822",
       "memberId": "GV-1012",
       "store": "Go Vita Fremantle",
