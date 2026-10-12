@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595 842" role="img" aria-label="Winter Wellness immune support A4 window poster">
+  <title>Winter Wellness — Immune Support — A4 window poster (portrait)</title>
+  <defs>
+    <linearGradient id="wwp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EE2528"/>
+      <stop offset="1" stop-color="#B51319"/>
+    </linearGradient>
+  </defs>
+  <rect width="595" height="842" fill="#FFF7EF"/>
+  <rect x="0" y="0" width="595" height="210" fill="url(#wwp)"/>
+  <text x="297" y="80" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="#FBE64D" letter-spacing="3">GO VITA · WINTER WELLNESS</text>
+  <text x="297" y="150" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="58" font-weight="800" fill="#ffffff">Stay Well</text>
+  <text x="297" y="190" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="30" font-weight="400" fill="#ffffff">this season</text>
+  <text x="297" y="330" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="46" font-weight="800" fill="#EE2528">Vitamin D3 + C</text>
+  <text x="297" y="400" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="27" fill="#282C3F">Immune support · cold &amp; flu season</text>
+  <text x="297" y="440" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="27" fill="#282C3F">Daily defence · energy · wellbeing</text>
+  <circle cx="297" cy="560" r="78" fill="#4C9A5B"/>
+  <text x="297" y="550" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#ffffff">IN STORE</text>
+  <text x="297" y="582" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#ffffff">NOW</text>
+  <text x="297" y="700" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="24" fill="#282C3F">Ask our team for personalised advice.</text>
+  <text x="297" y="790" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#EE2528" letter-spacing="1">YOUR TRUSTED WELLNESS SPECIALIST</text>
+</svg>
