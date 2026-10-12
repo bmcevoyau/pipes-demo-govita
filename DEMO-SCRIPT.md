@@ -74,9 +74,13 @@ where trust is won. *Members:* proactive, no chasing.
 
 > **Prompt:** *"It's Megan again at Toowoomba — I want to freshen up the store for the new season. What campaign material do you have for in-store and social, and do you have the latest Go Mag?"*
 
-**Expected:** Cindy returns current campaigns (**Spring Reset / Go Mag feature**, **Winter Wellness**)
-with assets per channel — window posters, shelf-talkers, social tiles, web banner, logos, and the
-current **Go Mag** cover — each with a live download link; offers to add the store name / tweak wording.
+**Expected:** Cindy **leads with Spring Reset** (it's spring) plus the current **Go Mag**, with
+**Winter Wellness** offered as a carry-through. Assets per channel, each a live download link:
+- Spring Reset — window poster (A4→A3), gut-health shelf-talker (A6), social tile (1:1), web banner (1200×400), + current Go Mag cover
+- Winter Wellness (immune) — poster, D3+C shelf-talker, social tile, banner
+- Logos — primary / reverse / Rewards
+Cindy offers to add "Go Vita Toowoomba" to any poster/tile or tweak the wording. All assets are
+vector SVG (free, print- & web-ready). Full catalogue: `/marketing.html`.
 **Why it lands** — *Board:* consistent national brand across 110 independent stores, centrally
 controlled. *Members:* professional-looking store and socials in minutes, free.
 
