@@ -44,6 +44,20 @@
     ],
     "hashtags": ["#GoVitaWellness", "#SpringReset", "#GoVita"]
   },
+  "memberRecommendation": {
+    "memberId": "GV-1012",
+    "store": "Go Vita Victoria Park",
+    "source": "docs/data/sales-history.json (Accounts / Bob)",
+    "suggestedReorderValue": "approx $3,656.64 inc.",
+    "note": "Marketing lead order follows Bob's sales-volume priority. Each recommended line maps to a hero category, campaign phase and ready asset + sample copy so stocking and promotion line up.",
+    "productMap": [
+      { "priority": 1, "product": "SlimLine Green Tea + Meal Replacement", "heroCategory": "weight-summer", "phase": "Launch", "assets": ["poster-spring-reset", "banner-spring-reset", "social-tile-spring-reset"], "sampleCopy": "Spring Reset starts here — SlimLine Green Tea & Meal Replacement to get summer-ready the healthy way. #GoVitaWellness" },
+      { "priority": 2, "product": "FloraBalance Probiotic", "heroCategory": "gut-detox", "phase": "Launch", "assets": ["shelf-talker-spring-reset", "social-tile-spring-reset"], "sampleCopy": "Spring clean from the inside out with FloraBalance Probiotic — gut reset for the new season." },
+      { "priority": 3, "product": "Chia / organic clean-eating staples", "heroCategory": "gut-detox", "phase": "Sustain", "assets": ["shelf-talker-spring-reset", "social-tile-spring-reset"], "sampleCopy": "Fresh-start pantry: organic chia & clean-eating staples to power your Spring Reset." },
+      { "priority": 4, "product": "ProFuel Whey", "heroCategory": "energy-vitality", "phase": "Sustain", "assets": ["shelf-talker-spring-reset", "social-tile-spring-reset"], "sampleCopy": "Outdoor season is back — fuel it with ProFuel Whey. Find your spring in your step." },
+      { "priority": 5, "product": "Vitamin C (hayfever/allergy support)", "heroCategory": "allergy-hayfever", "phase": "Tease + Launch", "assets": ["poster-immune-arriving-soon-victoria-park", "social-tile-immune-arriving-soon-victoria-park", "shelf-talker-immune-vitamins"], "sampleCopy": "Pollen season? Breathe easy this spring with Vitamin C & natural allergy support." }
+    ]
+  },
   "measure": ["Hero-category sales vs last spring", "Rewards sign-ups during launch fortnight", "Social reach/engagement on campaign tiles", "Go Mag pickup / specials redemption"],
   "howToUse": "Take the member's top-selling categories (from Accounts' sales-volume recommendation) and map each to a hero category above; lead the window + launch assets with their #1 seller. All referenced assets are live in the marketing catalogue (docs/data/marketing-assets.json) and free to download."
 }
