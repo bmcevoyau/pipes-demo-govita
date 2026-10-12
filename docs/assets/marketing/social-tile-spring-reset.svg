@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Spring Reset social tile">
+  <title>Spring Reset — social tile (1:1, Instagram/Facebook)</title>
+  <rect width="600" height="600" fill="#FFF7EF"/>
+  <circle cx="300" cy="250" r="200" fill="#4C9A5B"/>
+  <text x="300" y="150" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#FBE64D" letter-spacing="4">GO VITA · NEW SEASON</text>
+  <text x="300" y="245" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="58" font-weight="800" fill="#ffffff">Spring</text>
+  <text x="300" y="315" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="58" font-weight="800" fill="#ffffff">Reset</text>
+  <text x="300" y="440" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" fill="#282C3F">Gut health · Energy · Greens</text>
+  <rect x="150" y="485" width="300" height="64" rx="32" fill="#EE2528"/>
+  <text x="300" y="527" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="#ffffff">#GoVitaWellness</text>
+</svg>

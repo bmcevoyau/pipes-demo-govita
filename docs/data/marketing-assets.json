@@ -135,6 +135,54 @@
       "updated": "2026-10-12"
     },
     {
+      "id": "poster-spring-reset",
+      "title": "Spring Reset window poster",
+      "category": "Window posters",
+      "format": "SVG (vector, print-ready A4 portrait)",
+      "dimensions": "595 × 842 (A4)",
+      "file": "assets/marketing/poster-spring-reset.svg",
+      "description": "New-season Spring Reset window poster — gut health, energy, greens & detox. Points to Go Mag specials.",
+      "usage": "Store window and entrance; scales to A3. Pairs with the current Go Mag.",
+      "campaign": "spring-reset",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "shelf-talker-spring-reset",
+      "title": "Spring Reset (gut health) shelf talker",
+      "category": "Shelf signage",
+      "format": "SVG (vector, print-ready A6 landscape)",
+      "dimensions": "400 × 260 (A6)",
+      "file": "assets/marketing/shelf-talker-spring-reset.svg",
+      "description": "Staff-pick shelf talker for Spring Reset — gut health & probiotics, greens & fibre.",
+      "usage": "Probiotics / greens bay. Adaptable to other spring hero products.",
+      "campaign": "spring-reset",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "social-tile-spring-reset",
+      "title": "Spring Reset social tile",
+      "category": "Social media",
+      "format": "SVG (vector, 1:1 square)",
+      "dimensions": "600 × 600",
+      "file": "assets/marketing/social-tile-spring-reset.svg",
+      "description": "New-season square for Instagram/Facebook with #GoVitaWellness.",
+      "usage": "Store social accounts; pair with a fresh produce / greens photo.",
+      "campaign": "spring-reset",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "banner-spring-reset",
+      "title": "Spring Reset web banner",
+      "category": "Web banners",
+      "format": "SVG (vector, scalable)",
+      "dimensions": "1200 × 400",
+      "file": "assets/marketing/banner-spring-reset.svg",
+      "description": "New-season leaderboard banner promoting Spring Reset and the new Go Mag.",
+      "usage": "Website hero, newsletter header, in-store screens.",
+      "campaign": "spring-reset",
+      "updated": "2026-10-12"
+    },
+    {
       "id": "gomag-cover-current",
       "title": "Go Mag — current issue cover",
       "category": "Publications",
@@ -149,7 +197,7 @@
   "campaigns": [
     { "id": "new-year-detox", "name": "New Year Detox / Reset", "window": "Jan–Feb", "theme": "Cleanse, gut & liver health, greens", "assets": ["poster-new-year-detox"] },
     { "id": "winter-wellness", "name": "Winter Wellness", "window": "Jun–Aug", "theme": "Immune support, cold & flu, vitamin C & D", "assets": ["banner-winter-wellness", "social-tile-immune", "shelf-talker-immune-vitamins", "poster-winter-wellness-immune"] },
-    { "id": "spring-reset", "name": "Spring Reset (Go Mag feature)", "window": "Sep–Oct", "theme": "Gut health, energy, pantry swaps", "assets": ["gomag-cover-current"] },
+    { "id": "spring-reset", "name": "Spring Reset (Go Mag feature)", "window": "Sep–Oct", "theme": "Gut health, energy, pantry swaps", "assets": ["poster-spring-reset", "shelf-talker-spring-reset", "social-tile-spring-reset", "banner-spring-reset", "gomag-cover-current"] },
     { "id": "rewards-evergreen", "name": "Go Vita Rewards (always-on)", "window": "Year-round", "theme": "Earn & redeem points, member bonus offers", "assets": ["logo-rewards"] }
   ],
   "testimonials": [

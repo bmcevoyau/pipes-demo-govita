@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-label="Spring Reset web banner">
+  <title>Spring Reset — leaderboard web banner (1200x400)</title>
+  <defs>
+    <linearGradient id="srb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4C9A5B"/>
+      <stop offset="1" stop-color="#2F7343"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#srb)"/>
+  <circle cx="1040" cy="120" r="230" fill="#ffffff" opacity="0.06"/>
+  <circle cx="150" cy="360" r="180" fill="#ffffff" opacity="0.06"/>
+  <text x="70" y="120" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#FBE64D" letter-spacing="3">GO VITA · NEW SEASON CAMPAIGN</text>
+  <text x="70" y="210" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="88" font-weight="800" fill="#ffffff">Spring Reset</text>
+  <text x="70" y="270" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="34" font-weight="400" fill="#ffffff">Gut health, energy, greens &amp; a fresh-start pantry.</text>
+  <rect x="70" y="300" width="330" height="62" rx="31" fill="#FBE64D"/>
+  <text x="235" y="340" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="#282C3F">New Go Mag out now</text>
+  <text x="70" y="388" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" fill="#ffffff" opacity="0.85">Specials inside · earn Go Vita Rewards points on every purchase.</text>
+</svg>

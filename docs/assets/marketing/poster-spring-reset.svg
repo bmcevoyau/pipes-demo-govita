@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595 842" role="img" aria-label="Spring Reset A4 window poster">
+  <title>Spring Reset — A4 window poster (portrait)</title>
+  <defs>
+    <linearGradient id="sr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4C9A5B"/>
+      <stop offset="1" stop-color="#2F7343"/>
+    </linearGradient>
+  </defs>
+  <rect width="595" height="842" fill="#FFF7EF"/>
+  <rect x="0" y="0" width="595" height="210" fill="url(#sr)"/>
+  <text x="297" y="80" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="#FBE64D" letter-spacing="3">GO VITA · NEW SEASON</text>
+  <text x="297" y="155" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="62" font-weight="800" fill="#ffffff">Spring Reset</text>
+  <text x="297" y="192" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="24" fill="#DFF2E3">Refresh · Rebalance · Re-energise</text>
+  <text x="297" y="330" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="40" font-weight="800" fill="#EE2528">Gut health · Energy</text>
+  <text x="297" y="380" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="40" font-weight="800" fill="#EE2528">Greens &amp; Detox</text>
+  <text x="297" y="445" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" fill="#282C3F">Probiotics · greens powders · daily cleanse</text>
+  <text x="297" y="483" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" fill="#282C3F">and fresh-start pantry swaps</text>
+  <rect x="147" y="540" width="300" height="80" rx="40" fill="#EE2528"/>
+  <text x="297" y="592" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="30" font-weight="800" fill="#ffffff">SPECIALS IN GO MAG</text>
+  <text x="297" y="690" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" fill="#282C3F">Pick up the new Go Mag in store · ask our team.</text>
+  <text x="297" y="790" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#4C9A5B" letter-spacing="1">YOUR TRUSTED WELLNESS SPECIALIST</text>
+</svg>
