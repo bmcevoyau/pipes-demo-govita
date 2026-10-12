@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-label="Winter Wellness web banner">
+  <title>Winter Wellness — leaderboard web banner (1200x400)</title>
+  <defs>
+    <linearGradient id="wg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EE2528"/>
+      <stop offset="1" stop-color="#B51319"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#wg)"/>
+  <circle cx="1040" cy="120" r="230" fill="#ffffff" opacity="0.06"/>
+  <circle cx="150" cy="360" r="180" fill="#ffffff" opacity="0.06"/>
+  <text x="70" y="120" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#FBE64D" letter-spacing="3">GO VITA · SEASONAL CAMPAIGN</text>
+  <text x="70" y="210" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="88" font-weight="800" fill="#ffffff">Winter Wellness</text>
+  <text x="70" y="270" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="34" font-weight="400" fill="#ffffff">Immune support, vitamin C &amp; D, and cold &amp; flu essentials.</text>
+  <rect x="70" y="300" width="300" height="62" rx="31" fill="#FBE64D"/>
+  <text x="220" y="340" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="#282C3F">Shop in-store &amp; online</text>
+  <text x="70" y="388" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" fill="#ffffff" opacity="0.85">Earn Go Vita Rewards points on every purchase.</text>
+</svg>

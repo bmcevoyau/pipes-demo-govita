@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" role="img" aria-label="Go Vita Rewards logo">
+  <title>Go Vita Rewards program lockup</title>
+  <rect width="520" height="200" fill="#ffffff"/>
+  <g transform="translate(40,60)">
+    <circle cx="40" cy="40" r="40" fill="#F5C518"/>
+    <path d="M40 14l7.6 15.4 17 2.5-12.3 12 2.9 16.9L40 69.3 24.8 72.8l2.9-16.9-12.3-12 17-2.5z" fill="#EE2528"/>
+  </g>
+  <g font-family="'Segoe UI',Helvetica,Arial,sans-serif">
+    <text x="150" y="92" font-size="64" font-weight="800" fill="#EE2528" letter-spacing="-1">go vita</text>
+    <text x="152" y="140" font-size="40" font-weight="800" fill="#282C3F" letter-spacing="6">REWARDS</text>
+  </g>
+</svg>

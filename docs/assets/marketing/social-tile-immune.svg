@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Immune support social tile">
+  <title>Immune Support — social tile (1:1, Instagram/Facebook)</title>
+  <rect width="600" height="600" fill="#282C3F"/>
+  <circle cx="300" cy="260" r="200" fill="#EE2528"/>
+  <text x="300" y="150" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#FBE64D" letter-spacing="4">GO VITA</text>
+  <text x="300" y="250" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="58" font-weight="800" fill="#ffffff">Stay Well</text>
+  <text x="300" y="320" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="58" font-weight="800" fill="#ffffff">This Season</text>
+  <text x="300" y="440" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" fill="#DDE1E8">Vitamin C · Zinc · Elderberry</text>
+  <rect x="180" y="480" width="240" height="64" rx="32" fill="#FBE64D"/>
+  <text x="300" y="522" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="#282C3F">#GoVitaWellness</text>
+</svg>

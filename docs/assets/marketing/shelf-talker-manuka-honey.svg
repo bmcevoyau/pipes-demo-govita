@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="Manuka Honey shelf talker">
+  <title>Manuka Honey — shelf talker (A6 landscape)</title>
+  <rect width="400" height="260" fill="#ffffff" stroke="#F5C518" stroke-width="10"/>
+  <rect x="0" y="0" width="400" height="58" fill="#F5C518"/>
+  <text x="20" y="40" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="#282C3F">STAFF PICK · MANUKA HONEY</text>
+  <text x="20" y="110" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="30" font-weight="800" fill="#EE2528">Nature's immune boost</text>
+  <text x="20" y="148" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#282C3F">MGO rated · raw &amp; unfiltered</text>
+  <text x="20" y="176" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#282C3F">Soothes throats · supports immunity</text>
+  <rect x="20" y="198" width="150" height="44" rx="8" fill="#4C9A5B"/>
+  <text x="95" y="227" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="800" fill="#ffffff">Ask our team</text>
+  <text x="250" y="222" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" fill="#4C9A5B" font-weight="700">go vita</text>
+  <text x="250" y="242" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#888">Rewards points apply</text>
+</svg>

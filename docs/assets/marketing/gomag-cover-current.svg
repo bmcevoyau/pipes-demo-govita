@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 620" role="img" aria-label="Go Mag current issue cover">
+  <title>Go Mag — current issue cover mock</title>
+  <rect width="480" height="620" fill="#FFF7EF"/>
+  <rect x="0" y="0" width="480" height="120" fill="#EE2528"/>
+  <text x="30" y="70" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="52" font-weight="800" fill="#ffffff">go mag</text>
+  <text x="300" y="60" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" fill="#FBE64D">FREE in-store</text>
+  <text x="300" y="86" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" fill="#ffffff">Issue · Spring</text>
+  <circle cx="240" cy="320" r="150" fill="#4C9A5B" opacity="0.15"/>
+  <text x="30" y="220" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="40" font-weight="800" fill="#282C3F">Spring</text>
+  <text x="30" y="270" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="40" font-weight="800" fill="#EE2528">Reset</text>
+  <text x="30" y="340" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" fill="#282C3F">• Gut health made simple</text>
+  <text x="30" y="376" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" fill="#282C3F">• 5 pantry swaps that stick</text>
+  <text x="30" y="412" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" fill="#282C3F">• Energy &amp; immunity combos</text>
+  <rect x="30" y="470" width="260" height="70" rx="12" fill="#FBE64D"/>
+  <text x="50" y="505" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="800" fill="#282C3F">SPECIALS INSIDE</text>
+  <text x="50" y="530" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" fill="#282C3F">+ Rewards member bonus points</text>
+  <text x="30" y="590" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#4C9A5B" letter-spacing="1">YOUR TRUSTED WELLNESS SPECIALIST</text>
+</svg>

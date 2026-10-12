@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" role="img" aria-label="Go Vita — Your Trusted Wellness Specialist">
+  <title>Go Vita primary logo</title>
+  <rect width="520" height="200" fill="#ffffff"/>
+  <!-- leaf mark -->
+  <g transform="translate(38,56)">
+    <circle cx="44" cy="44" r="44" fill="#EE2528"/>
+    <path d="M44 18c-18 6-28 22-24 44 22 2 38-10 44-28-8 2-16 8-20 16 2-14 10-26 0-32z" fill="#ffffff"/>
+  </g>
+  <!-- wordmark -->
+  <g font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-weight="800">
+    <text x="150" y="104" font-size="78" fill="#EE2528" letter-spacing="-2">go</text>
+    <text x="258" y="104" font-size="78" fill="#282C3F" letter-spacing="-2">vita</text>
+  </g>
+  <text x="152" y="140" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="600" fill="#4C9A5B" letter-spacing="1.5">YOUR TRUSTED WELLNESS SPECIALIST</text>
+</svg>

@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "owner": "Cindy — Marketing Coordination",
+    "brand": "Go Vita",
+    "updated": "2026-10-12",
+    "note": "Demo marketing dataset for the Go Vita member-support workflow. All assets are self-contained SVGs under docs/assets/marketing/ and are free for members to use in-store, online, and with customers.",
+    "contactRoute": "Members ask Alice (member support); marketing enquiries are routed to Cindy."
+  },
+  "brandGuidelines": {
+    "tagline": "More than a health food shop. A turning point towards wellness.",
+    "positioningLine": "Your Trusted Wellness Specialist",
+    "voice": "Warm, knowledgeable, encouraging, never preachy. Plain-English health advice.",
+    "colours": [
+      { "name": "Go Vita Red", "hex": "#EE2528", "use": "Primary brand colour, logos, headlines, CTAs" },
+      { "name": "Charcoal", "hex": "#282C3F", "use": "Body text and dark backgrounds" },
+      { "name": "Wellness Green", "hex": "#4C9A5B", "use": "Natural/health accents, sub-brands" },
+      { "name": "Rewards Gold", "hex": "#F5C518", "use": "Go Vita Rewards & specials flags" },
+      { "name": "Warm Cream", "hex": "#FFF7EF", "use": "Soft backgrounds for print" },
+      { "name": "White", "hex": "#FFFFFF", "use": "Reverse logo / clear space" }
+    ],
+    "logoRules": [
+      "Maintain clear space equal to the height of the leaf mark on all sides.",
+      "Use the reverse (white) logo on dark or photographic backgrounds.",
+      "Do not stretch, recolour, or add effects to the logo.",
+      "Minimum width 120px on screen / 30mm in print."
+    ],
+    "fonts": "Headlines: heavy sans-serif (Segoe UI / Helvetica / Arial 800). Body: regular sans-serif."
+  },
+  "categories": [
+    "Logos", "Web banners", "Window posters", "Shelf signage", "Social media", "Publications"
+  ],
+  "assets": [
+    {
+      "id": "logo-primary",
+      "title": "Go Vita primary logo",
+      "category": "Logos",
+      "format": "SVG (vector, scalable)",
+      "dimensions": "520 × 200",
+      "file": "assets/marketing/govita-logo-primary.svg",
+      "description": "Full-colour horizontal logo with leaf mark and positioning line. Default logo for white/light backgrounds.",
+      "usage": "Websites, letterheads, email signatures, light print.",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "logo-reverse",
+      "title": "Go Vita reverse logo",
+      "category": "Logos",
+      "format": "SVG (vector, scalable)",
+      "dimensions": "520 × 200",
+      "file": "assets/marketing/govita-logo-reverse.svg",
+      "description": "White/reverse logo for dark or photographic backgrounds.",
+      "usage": "Dark banners, social overlays, signage on photography.",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "logo-rewards",
+      "title": "Go Vita Rewards lockup",
+      "category": "Logos",
+      "format": "SVG (vector, scalable)",
+      "dimensions": "520 × 200",
+      "file": "assets/marketing/govita-rewards-logo.svg",
+      "description": "Loyalty-program lockup with gold star mark for Go Vita Rewards.",
+      "usage": "Rewards sign-up, member comms, points promotions.",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "banner-winter-wellness",
+      "title": "Winter Wellness web banner",
+      "category": "Web banners",
+      "format": "SVG (vector, scalable)",
+      "dimensions": "1200 × 400",
+      "file": "assets/marketing/banner-winter-wellness.svg",
+      "description": "Seasonal immune-support leaderboard banner. Red gradient with yellow CTA.",
+      "usage": "Website hero, newsletter header, in-store screens.",
+      "campaign": "winter-wellness",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "poster-new-year-detox",
+      "title": "New Year Detox window poster",
+      "category": "Window posters",
+      "format": "SVG (vector, print-ready A4 portrait)",
+      "dimensions": "595 × 842 (A4)",
+      "file": "assets/marketing/poster-new-year-detox.svg",
+      "description": "Reset & Detox campaign poster with SAVE 20% flash for the New Year period.",
+      "usage": "Store windows and entrance; scales to A3.",
+      "campaign": "new-year-detox",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "shelf-talker-manuka-honey",
+      "title": "Manuka Honey shelf talker",
+      "category": "Shelf signage",
+      "format": "SVG (vector, print-ready A6 landscape)",
+      "dimensions": "400 × 260 (A6)",
+      "file": "assets/marketing/shelf-talker-manuka-honey.svg",
+      "description": "Staff-pick shelf talker highlighting Manuka honey immune benefits.",
+      "usage": "Shelf edge / product bay; template adaptable to other hero products.",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "social-tile-immune",
+      "title": "Stay Well social tile",
+      "category": "Social media",
+      "format": "SVG (vector, 1:1 square)",
+      "dimensions": "600 × 600",
+      "file": "assets/marketing/social-tile-immune.svg",
+      "description": "Instagram/Facebook square promoting immune essentials with #GoVitaWellness.",
+      "usage": "Store social accounts; pair with product photo in carousel.",
+      "campaign": "winter-wellness",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "gomag-cover-current",
+      "title": "Go Mag — current issue cover",
+      "category": "Publications",
+      "format": "SVG (vector)",
+      "dimensions": "480 × 620",
+      "file": "assets/marketing/gomag-cover-current.svg",
+      "description": "Cover mock of the current Go Mag (Spring Reset) free in-store magazine.",
+      "usage": "Promote the free magazine online and in newsletters; specials inside.",
+      "updated": "2026-10-12"
+    }
+  ],
+  "campaigns": [
+    { "id": "new-year-detox", "name": "New Year Detox / Reset", "window": "Jan–Feb", "theme": "Cleanse, gut & liver health, greens", "assets": ["poster-new-year-detox"] },
+    { "id": "winter-wellness", "name": "Winter Wellness", "window": "Jun–Aug", "theme": "Immune support, cold & flu, vitamin C & D", "assets": ["banner-winter-wellness", "social-tile-immune"] },
+    { "id": "spring-reset", "name": "Spring Reset (Go Mag feature)", "window": "Sep–Oct", "theme": "Gut health, energy, pantry swaps", "assets": ["gomag-cover-current"] },
+    { "id": "rewards-evergreen", "name": "Go Vita Rewards (always-on)", "window": "Year-round", "theme": "Earn & redeem points, member bonus offers", "assets": ["logo-rewards"] }
+  ],
+  "testimonials": [
+    { "memberId": "GV-1023", "member": "Go Vita Toowoomba, Regional QLD", "quote": "The seasonal poster kits make our window look professional in minutes — we swap them every quarter.", "rating": 5 },
+    { "memberId": "GV-1052", "member": "Go Vita Geelong, Regional VIC", "quote": "Shelf talkers lift our staff-pick sales noticeably. Customers trust the recommendation.", "rating": 5 },
+    { "memberId": "GV-1031", "member": "Go Vita Glenelg, Adelaide SA", "quote": "Having the logos and social tiles ready to download saves us hours every week.", "rating": 5 },
+    { "memberId": "GV-1078", "member": "Go Vita Noosa, Sunshine Coast QLD", "quote": "Go Mag is still our best in-store conversation starter. Members come in asking for the specials.", "rating": 5 }
+  ],
+  "faq": [
+    { "q": "Can I get the Go Vita logo for my store signage?", "a": "Yes — primary (colour) and reverse (white) logos are available as scalable SVGs. See the Logos section." },
+    { "q": "Do you have current promotional posters?", "a": "Yes — seasonal window posters and web banners are kept current per campaign (New Year Detox, Winter Wellness, Spring Reset)." },
+    { "q": "What can I post on social media?", "a": "Ready-made square social tiles with the #GoVitaWellness hashtag; pair with your own product photos." },
+    { "q": "How do members earn marketing support?", "a": "All co-op members can request any asset in this catalogue free of charge via member support (Alice)." }
+  ]
+}
