@@ -1,0 +1,185 @@
+/* Go Vita co-op demo — shared theme
+   Owned by Alice. Bob & Cindy: link this on your pages, don't edit it
+   (ping Alice in the room if you need a new component). */
+
+:root {
+  --gv-green: #4c8b2b;
+  --gv-green-dark: #356a1c;
+  --gv-green-light: #eaf4e2;
+  --gv-leaf: #7cb342;
+  --gv-earth: #6d4c33;
+  --gv-amber: #f6a623;
+  --ink: #233027;
+  --muted: #5d6b60;
+  --line: #d9e4d2;
+  --bg: #f7faf4;
+  --card: #ffffff;
+  --radius: 14px;
+  --shadow: 0 2px 10px rgba(40, 70, 30, 0.07);
+  --maxw: 1040px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+a { color: var(--gv-green-dark); }
+
+/* ---- Header / nav ---- */
+.site-header {
+  background: linear-gradient(135deg, var(--gv-green) 0%, var(--gv-green-dark) 100%);
+  color: #fff;
+}
+.nav {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 20px;
+  flex-wrap: wrap;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 0.2px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: auto;
+}
+.brand .leaf {
+  width: 30px; height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  color: var(--gv-green);
+  font-size: 1.1rem;
+}
+.nav a.navlink {
+  color: #eafbe0;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.nav a.navlink:hover { background: rgba(255,255,255,0.15); color: #fff; }
+.nav a.navlink.active { background: #fff; color: var(--gv-green-dark); }
+
+/* ---- Layout ---- */
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 32px 20px 64px; }
+.hero {
+  background: var(--gv-green-light);
+  border-bottom: 1px solid var(--line);
+}
+.hero .wrap { padding-top: 48px; padding-bottom: 48px; }
+.hero h1 { font-size: 2.2rem; margin: 0 0 10px; color: var(--gv-green-dark); }
+.hero p.tag { font-size: 1.15rem; color: var(--muted); margin: 0; }
+.eyebrow {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--gv-green);
+  background: #fff;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+h2 { color: var(--gv-green-dark); margin-top: 2.2em; }
+h2:first-child { margin-top: 0; }
+
+/* ---- Cards ---- */
+.grid { display: grid; gap: 18px; }
+.grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.grid.cols-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+.card h3 { margin: 0 0 6px; color: var(--ink); }
+.card .role { font-size: 0.8rem; font-weight: 700; color: var(--gv-green); text-transform: uppercase; letter-spacing: 1px; }
+.card .who { color: var(--muted); font-size: 0.9rem; margin: 2px 0 10px; }
+
+/* ---- Badges ---- */
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+.badge.gold   { background: #fdf3dd; color: #a6771a; border-color: #f1dca2; }
+.badge.silver { background: #eef1f4; color: #5c6b78; border-color: #d7dee5; }
+.badge.bronze { background: #f6ebe2; color: #8a5a36; border-color: #e6cdb8; }
+.badge.green  { background: var(--gv-green-light); color: var(--gv-green-dark); border-color: #cfe6bd; }
+.badge.amber  { background: #fef1d9; color: #9a6a0e; border-color: #f6d79a; }
+.badge.grey   { background: #eef1f0; color: #5d6b60; border-color: #dce3dd; }
+
+/* ---- Tables ---- */
+.table-wrap { overflow-x: auto; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  font-size: 0.92rem;
+}
+th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--line); }
+th { background: var(--gv-green-light); color: var(--gv-green-dark); font-weight: 700; white-space: nowrap; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #fafdf7; }
+
+/* ---- Workflow / steps ---- */
+.steps { counter-reset: step; display: grid; gap: 14px; }
+.step {
+  display: flex; gap: 14px; align-items: flex-start;
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 16px 18px;
+}
+.step::before {
+  counter-increment: step; content: counter(step);
+  flex: 0 0 34px; height: 34px;
+  background: var(--gv-green); color: #fff;
+  border-radius: 50%; display: grid; place-items: center; font-weight: 700;
+}
+.step .s-body { flex: 1; }
+.step .s-body strong { color: var(--gv-green-dark); }
+
+.pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+
+.note {
+  background: #fff8e8; border: 1px solid #f3e0b0; border-left: 4px solid var(--gv-amber);
+  padding: 12px 16px; border-radius: 8px; color: #6b5516; font-size: 0.92rem;
+}
+
+/* ---- Footer ---- */
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: #fff;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.site-footer .wrap { padding: 22px 20px; }
+
+.lede { font-size: 1.08rem; color: var(--muted); max-width: 70ch; }
+.kpi { font-size: 2rem; font-weight: 800; color: var(--gv-green-dark); line-height: 1; }
+.kpi-label { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+code.inline { background: var(--gv-green-light); padding: 1px 6px; border-radius: 5px; font-size: 0.88em; }

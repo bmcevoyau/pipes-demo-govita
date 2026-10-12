@@ -1,0 +1,126 @@
+{
+  "_comment": "Demo member directory for the Go Vita co-op. Members are independent store owners/operators. This is the shared reference used by Alice (support), Bob (accounts) and Cindy (marketing) to resolve enquiries. All data is fictional and for demonstration only.",
+  "generated": "2026-10-12",
+  "members": [
+    {
+      "memberId": "GV-1007",
+      "storeName": "Go Vita Bondi Junction",
+      "contactName": "Priya Nair",
+      "email": "bondi@govita-demo.com.au",
+      "phone": "02 9387 1007",
+      "state": "NSW",
+      "region": "Sydney Metro",
+      "joined": "2016-03-14",
+      "tier": "Gold",
+      "accountManager": "Bob"
+    },
+    {
+      "memberId": "GV-1012",
+      "storeName": "Go Vita Fremantle",
+      "contactName": "Daniel Okafor",
+      "email": "fremantle@govita-demo.com.au",
+      "phone": "08 9335 1012",
+      "state": "WA",
+      "region": "Perth Metro",
+      "joined": "2018-07-02",
+      "tier": "Silver",
+      "accountManager": "Bob"
+    },
+    {
+      "memberId": "GV-1023",
+      "storeName": "Go Vita Toowoomba",
+      "contactName": "Megan Fletcher",
+      "email": "toowoomba@govita-demo.com.au",
+      "phone": "07 4632 1023",
+      "state": "QLD",
+      "region": "Regional QLD",
+      "joined": "2014-11-20",
+      "tier": "Gold",
+      "accountManager": "Bob"
+    },
+    {
+      "memberId": "GV-1031",
+      "storeName": "Go Vita Glenelg",
+      "contactName": "Sofia Russo",
+      "email": "glenelg@govita-demo.com.au",
+      "phone": "08 8295 1031",
+      "state": "SA",
+      "region": "Adelaide Metro",
+      "joined": "2019-02-11",
+      "tier": "Silver",
+      "accountManager": "Bob"
+    },
+    {
+      "memberId": "GV-1044",
+      "storeName": "Go Vita Launceston",
+      "contactName": "Tom Bradley",
+      "email": "launceston@govita-demo.com.au",
+      "phone": "03 6331 1044",
+      "state": "TAS",
+      "region": "Regional TAS",
+      "joined": "2020-09-08",
+      "tier": "Bronze",
+      "accountManager": "Bob"
+    },
+    {
+      "memberId": "GV-1052",
+      "storeName": "Go Vita Geelong",
+      "contactName": "Aisha Rahman",
+      "email": "geelong@govita-demo.com.au",
+      "phone": "03 5221 1052",
+      "state": "VIC",
+      "region": "Regional VIC",
+      "joined": "2017-05-30",
+      "tier": "Gold",
+      "accountManager": "Bob"
+    },
+    {
+      "memberId": "GV-1066",
+      "storeName": "Go Vita Chatswood",
+      "contactName": "James Liu",
+      "email": "chatswood@govita-demo.com.au",
+      "phone": "02 9411 1066",
+      "state": "NSW",
+      "region": "Sydney Metro",
+      "joined": "2015-08-19",
+      "tier": "Gold",
+      "accountManager": "Bob"
+    },
+    {
+      "memberId": "GV-1078",
+      "storeName": "Go Vita Noosa",
+      "contactName": "Hannah Weber",
+      "email": "noosa@govita-demo.com.au",
+      "phone": "07 5447 1078",
+      "state": "QLD",
+      "region": "Sunshine Coast",
+      "joined": "2021-01-25",
+      "tier": "Silver",
+      "accountManager": "Bob"
+    },
+    {
+      "memberId": "GV-1085",
+      "storeName": "Go Vita Ballarat",
+      "contactName": "Oliver Grant",
+      "email": "ballarat@govita-demo.com.au",
+      "phone": "03 5331 1085",
+      "state": "VIC",
+      "region": "Regional VIC",
+      "joined": "2013-06-12",
+      "tier": "Gold",
+      "accountManager": "Bob"
+    },
+    {
+      "memberId": "GV-1090",
+      "storeName": "Go Vita Darwin",
+      "contactName": "Grace Tjandra",
+      "email": "darwin@govita-demo.com.au",
+      "phone": "08 8941 1090",
+      "state": "NT",
+      "region": "Regional NT",
+      "joined": "2022-04-03",
+      "tier": "Bronze",
+      "accountManager": "Bob"
+    }
+  ]
+}

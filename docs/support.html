@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Member Support — Alice | Go Vita</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="leaf">🌿</span> Go Vita Member Services</a>
+      <a class="navlink" href="index.html">Home</a>
+      <a class="navlink active" href="support.html">Member Support</a>
+      <a class="navlink" href="accounts.html">Accounts</a>
+      <a class="navlink" href="marketing.html">Marketing</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Member Support · Alice</span>
+      <h1>Your first point of contact</h1>
+      <p class="tag">Ask me anything — I'll get you to the right place.</p>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <p class="lede">
+      I'm Alice, the member support agent for the Go Vita co-op. Every member enquiry comes to me
+      first. I confirm what you need, then either help you directly or route your request to the
+      specialist who can — Bob for accounts, Cindy for marketing. You only ever deal with me; the
+      hand-offs happen behind the scenes.
+    </p>
+
+    <h2>What I can help with directly</h2>
+    <div class="grid cols-3">
+      <div class="card">
+        <h3>Getting started</h3>
+        <p>Where to find things, who handles what, and how the co-op's member services work.</p>
+      </div>
+      <div class="card">
+        <h3>Finding the right team</h3>
+        <p>Not sure who to ask? Describe it in plain words and I'll route it correctly.</p>
+      </div>
+      <div class="card">
+        <h3>General store questions</h3>
+        <p>Quick answers about the co-op, product ranges, and where to look on the website.</p>
+      </div>
+    </div>
+
+    <h2>Where I route enquiries</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>If your enquiry is about…</th><th>Goes to</th><th>Examples</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="badge green">Accounts</span></td>
+            <td>Bob — Member Accounts</td>
+            <td>Order status, quantities, pricing, invoices, delivery tracking, account tier</td>
+          </tr>
+          <tr>
+            <td><span class="badge amber">Marketing</span></td>
+            <td>Cindy — Marketing Coordination</td>
+            <td>Logos, banners, in-store signage, promo designs, social content, testimonials, Go&nbsp;Mag</td>
+          </tr>
+          <tr>
+            <td><span class="badge grey">General</span></td>
+            <td>Alice (me)</td>
+            <td>How-to questions, who-does-what, pointers to the website</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>How I handle your enquiry</h2>
+    <div class="steps">
+      <div class="step"><div class="s-body"><strong>Listen &amp; confirm.</strong> I restate what you need so we both know we're on the same page.</div></div>
+      <div class="step"><div class="s-body"><strong>Classify.</strong> Accounts, marketing, or something I can answer directly.</div></div>
+      <div class="step"><div class="s-body"><strong>Route &amp; gather.</strong> I pass accounts questions to Bob and marketing questions to Cindy, and collect their answer.</div></div>
+      <div class="step"><div class="s-body"><strong>Reply.</strong> You get one clear, friendly answer from me.</div></div>
+    </div>
+
+    <h2>Member directory</h2>
+    <p class="lede">The co-op members I support (demo data). Account specifics live with Bob;
+       marketing history lives with Cindy.</p>
+    <div class="table-wrap">
+      <table id="members">
+        <thead>
+          <tr><th>Member ID</th><th>Store</th><th>Contact</th><th>State</th><th>Tier</th></tr>
+        </thead>
+        <tbody><tr><td colspan="5">Loading member directory…</td></tr></tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:22px">
+      <strong>Demo note:</strong> Members, contacts and phone numbers shown here are fictional.
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">Go Vita Member Services — Member Support desk (Alice). Fictional demo data.</div>
+  </footer>
+
+  <script>
+    fetch('data/members.json')
+      .then(r => r.json())
+      .then(d => {
+        const rows = (d.members || []).map(m => `
+          <tr>
+            <td><code class="inline">${m.memberId}</code></td>
+            <td>${m.storeName}</td>
+            <td>${m.contactName}</td>
+            <td>${m.state}</td>
+            <td><span class="badge ${ (m.tier||'').toLowerCase() }">${m.tier}</span></td>
+          </tr>`).join('');
+        document.querySelector('#members tbody').innerHTML = rows ||
+          '<tr><td colspan="5">No members found.</td></tr>';
+      })
+      .catch(() => {
+        document.querySelector('#members tbody').innerHTML =
+          '<tr><td colspan="5">Member directory unavailable.</td></tr>';
+      });
+  </script>
+</body>
+</html>
