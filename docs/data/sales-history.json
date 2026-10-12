@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "description": "Trailing-12-month sales volumes by member store, used by Accounts (Bob) to ground seasonal stock recommendations. Fictional demo data.",
+    "currency": "AUD",
+    "owner": "Bob (Member Accounts)",
+    "period": "2025-10 to 2026-09 (trailing 12 months)"
+  },
+  "members": [
+    {
+      "memberId": "GV-1012",
+      "store": "Go Vita Victoria Park",
+      "tier": "Silver",
+      "trailing12mUnits": 6260,
+      "categoryVolumes": [
+        { "category": "Vitamins & Supplements", "units": 1850, "approxWholesale": 24100, "share": "29.6%" },
+        { "category": "Immune & Wellness",       "units": 1420, "approxWholesale": 17900, "share": "22.7%" },
+        { "category": "Sports Nutrition",        "units": 980,  "approxWholesale": 21600, "share": "15.7%", "trend": "growing" },
+        { "category": "Organic & Whole Foods",   "units": 760,  "approxWholesale": 5300,  "share": "12.1%" },
+        { "category": "Herbal & Naturopathic",   "units": 540,  "approxWholesale": 7200,  "share": "8.6%" },
+        { "category": "Weight Management",        "units": 410,  "approxWholesale": 6100,  "share": "6.5%", "trend": "under-indexed vs co-op" },
+        { "category": "Natural Beauty & Skincare","units": 300,  "approxWholesale": 2600,  "share": "4.8%" }
+      ],
+      "topProducts": [
+        { "sku": "GV-VIT-0102", "name": "Vitamin D3 1000IU 250 caps", "units": 540 },
+        { "sku": "GV-VIT-0103", "name": "Vitamin C 1000mg 90 tabs", "units": 470 },
+        { "sku": "GV-IMM-0701", "name": "Elderberry & Zinc Lozenges 60s", "units": 430 },
+        { "sku": "GV-VIT-0104", "name": "Zinc Picolinate 25mg 100 caps", "units": 360 },
+        { "sku": "GV-SPT-0401", "name": "ProFuel Whey Protein Vanilla 1kg", "units": 300 }
+      ],
+      "seasonalNote": "Immune & Vitamins peak Apr-Aug (winter). Sports growing year-on-year. Weight Management runs ~6% of volume — below the co-op average for a metro store of this size, i.e. a spring growth opportunity."
+    }
+  ],
+  "springBestSellers": {
+    "season": "Spring (Sep-Nov)",
+    "coopTrend": "As winter immune demand eases, co-op spring sellers shift to detox/gut-health, pre-summer weight management, energy & sports (outdoor season), and clean-eating staples. Allergy/hayfever support (Vitamin C) lifts.",
+    "recommendedForGV1012": [
+      { "sku": "GV-WGT-0501", "name": "SlimLine Green Tea Metabolism 90 caps", "reason": "Pre-summer weight-management demand; this is your under-indexed category (6.5%) = clearest growth upside.", "suggestedCartons": 6 },
+      { "sku": "GV-WGT-0502", "name": "SlimLine Meal Replacement Shake Vanilla 750g", "reason": "Pairs with Green Tea for a spring 'reset' bundle; higher unit value.", "suggestedCartons": 4 },
+      { "sku": "GV-IMM-0703", "name": "FloraBalance Probiotic 50 Billion 30 caps", "reason": "Gut health / spring detox; leverages your strong Immune & Wellness base (22.7%).", "suggestedCartons": 5 },
+      { "sku": "GV-ORG-0303", "name": "NutriSeed Organic Chia Seeds 500g", "reason": "Clean-eating/detox staple; your Organic range is solid and spring-aligned.", "suggestedCartons": 8 },
+      { "sku": "GV-SPT-0401", "name": "ProFuel Whey Protein Vanilla 1kg", "reason": "Outdoor-season sports ramp; Sports is your fastest-growing category and Whey is already a top-5 line.", "suggestedCartons": 6 },
+      { "sku": "GV-VIT-0103", "name": "High-Strength Vitamin C 1000mg 90 tabs", "reason": "Hayfever/allergy season support + already your #2 seller — keep depth high.", "suggestedCartons": 6 }
+    ],
+    "taperLines": "Ease back ordering depth on heavy winter immune lines (Elderberry lozenges, Olive Leaf) as the season turns, without dropping Vitamin D3/C which stay year-round."
+  }
+}
