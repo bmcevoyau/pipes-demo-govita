@@ -121,16 +121,15 @@
       "carrier": null,
       "tracking": null,
       "lineItems": [
-        { "sku": "GV-SPT-0404", "name": "ProFuel BCAA Electrolytes Berry 400g", "category": "Sports Nutrition", "qty": 20, "unitWholesale": 16.8, "lineTotal": 336 },
-        { "sku": "GV-SPT-0402", "name": "ProFuel Plant Protein Chocolate 1kg", "category": "Sports Nutrition", "qty": 8, "unitWholesale": 30.5, "lineTotal": 244 }
+        { "sku": "GV-SPT-0404", "name": "ProFuel BCAA Electrolytes Berry 400g", "category": "Sports Nutrition", "qty": 200, "unitWholesale": 16.8, "lineTotal": 3360 }
       ],
-      "subtotalExGst": 580,
+      "subtotalExGst": 3360,
       "tierDiscountPct": 6,
-      "tierDiscount": 34.8,
+      "tierDiscount": 201.6,
       "freight": 0,
-      "gst": 54.52,
-      "totalIncGst": 599.72,
-      "itemCount": 28
+      "gst": 315.84,
+      "totalIncGst": 3474.24,
+      "itemCount": 200
     },
     {
       "orderId": "SO-24744",
