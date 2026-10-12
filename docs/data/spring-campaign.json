@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "owner": "Cindy — Marketing Coordination",
+    "brand": "Go Vita",
+    "updated": "2026-10-12",
+    "purpose": "Marketing content + campaign structure for the 'Spring best-sellers' member recommendation. Pairs with Accounts' sales-based product recommendation (Bob): slot the member's actual top sellers into the hero categories below.",
+    "appliesTo": "Demo closing step — member asks for best sellers for the coming season + what marketing they'd need."
+  },
+  "campaign": {
+    "name": "Spring Reset",
+    "season": "Spring · Sep–Nov (Australia)",
+    "bigIdea": "Help customers shake off winter and get 'spring ready' — lighter, cleaner, more energetic — with a clear in-store + social story and Go Mag specials.",
+    "positioning": "Your Trusted Wellness Specialist",
+    "rewardsTieIn": "Double Go Vita Rewards points on hero categories for the launch fortnight to drive sign-ups and basket size."
+  },
+  "heroCategories": [
+    { "key": "allergy-hayfever", "name": "Allergy & Hayfever relief", "whySpring": "Pollen season — the #1 spring demand spike in health retail.", "productAngles": ["quercetin", "nettle", "horseradish & garlic", "sinus/nasal support", "natural antihistamines"], "marketingHook": "Breathe easy this spring." },
+    { "key": "gut-detox", "name": "Gut health & Detox / Greens", "whySpring": "Classic 'spring clean' mindset — reset after winter comfort food.", "productAngles": ["probiotics", "greens powders", "fibre", "liver & detox support"], "marketingHook": "Spring clean from the inside out." },
+    { "key": "energy-vitality", "name": "Energy & Vitality", "whySpring": "Longer days, more activity — B vitamins, iron, magnesium, adaptogens.", "productAngles": ["B-complex", "iron", "magnesium", "adaptogens"], "marketingHook": "Find your spring in your step." },
+    { "key": "skin-collagen", "name": "Skin, Hair & Collagen", "whySpring": "Pre-summer skin prep.", "productAngles": ["collagen", "silica", "omega oils", "antioxidants"], "marketingHook": "Glow into summer." },
+    { "key": "weight-summer", "name": "Weight Management / Summer-prep", "whySpring": "Early run-up to summer goals.", "productAngles": ["protein powders", "metabolism support", "meal-replacement"], "marketingHook": "Get summer-ready, the healthy way." }
+  ],
+  "structure": {
+    "phases": [
+      { "phase": "1 · Pre-season teaser", "timing": "2–3 weeks before launch", "goal": "Build anticipation; capture interest for incoming stock.", "channels": ["window poster", "social tile", "email"], "assets": ["poster-immune-arriving-soon-*", "social-tile-*"], "copyAngle": "Coming soon / arriving soon — register interest in store." },
+      { "phase": "2 · Launch", "timing": "Weeks 1–2", "goal": "Maximise trial & basket size.", "channels": ["window poster", "web banner", "shelf talkers", "social", "Go Mag feature"], "assets": ["poster-spring-reset", "banner-spring-reset", "shelf-talker-spring-reset", "social-tile-spring-reset", "gomag-cover-current"], "copyAngle": "Spring Reset is here + double Rewards points this fortnight." },
+      { "phase": "3 · Sustain / mid-season", "timing": "Weeks 3–6", "goal": "Keep momentum; rotate hero category of the week.", "channels": ["shelf talkers", "social", "staff picks"], "assets": ["shelf-talker-spring-reset", "social-tile-spring-reset"], "copyAngle": "Hero category spotlight (allergy → gut → energy → skin)." },
+      { "phase": "4 · Cross-sell / wind-down", "timing": "Weeks 7–8", "goal": "Bundle & transition to summer.", "channels": ["shelf talkers", "social", "Go Mag"], "assets": ["shelf-talker-spring-reset"], "copyAngle": "Bundle & save; redeem your Rewards points." }
+    ]
+  },
+  "channelPlan": [
+    { "channel": "Store window", "asset": "poster-spring-reset (A4→A3)", "cadence": "Swap at launch; refresh mid-season", "note": "First impression from the street." },
+    { "channel": "Shelf / bay", "asset": "shelf-talker-spring-reset (A6)", "cadence": "Per hero category", "note": "Point-of-decision; drives staff-pick sales." },
+    { "channel": "Social (IG/FB)", "asset": "social-tile-spring-reset (1:1)", "cadence": "2–3 posts/week", "note": "Pair with product photo; use #GoVitaWellness." },
+    { "channel": "Website / email", "asset": "banner-spring-reset (1200×400)", "cadence": "Hero for launch; newsletter header", "note": "Links to specials." },
+    { "channel": "In-store magazine", "asset": "gomag-cover-current", "cadence": "Season feature", "note": "Specials + Rewards bonus." }
+  ],
+  "content": {
+    "taglines": ["Spring Reset — refresh, rebalance, re-energise.", "Get spring ready at Go Vita.", "Spring clean from the inside out."],
+    "socialCaptions": [
+      "🌿 Spring Reset is here. Lighter, cleaner, more energised — ask our team where to start. #GoVitaWellness",
+      "Pollen getting you down? Our natural allergy & hayfever picks are in store now. #GoVitaWellness",
+      "Double Go Vita Rewards points on Spring Reset heroes this fortnight — stock up and save. #GoVitaWellness"
+    ],
+    "hashtags": ["#GoVitaWellness", "#SpringReset", "#GoVita"]
+  },
+  "measure": ["Hero-category sales vs last spring", "Rewards sign-ups during launch fortnight", "Social reach/engagement on campaign tiles", "Go Mag pickup / specials redemption"],
+  "howToUse": "Take the member's top-selling categories (from Accounts' sales-volume recommendation) and map each to a hero category above; lead the window + launch assets with their #1 seller. All referenced assets are live in the marketing catalogue (docs/data/marketing-assets.json) and free to download."
+}
