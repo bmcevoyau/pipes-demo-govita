@@ -32,14 +32,14 @@
     { "week": "Wk 4 (MTD)", "count": 84 }
   ],
   "recentEnquiries": [
-    { "id": "ENQ-5012", "time": "09:14", "memberId": "GV-1012", "store": "Go Vita Fremantle", "category": "Product & pricing (multivitamin)", "routedTo": "Bob", "status": "Resolved", "firstResponse": "1m", "resolution": "14m" },
-    { "id": "ENQ-5013", "time": "09:40", "memberId": "GV-1012", "store": "Go Vita Fremantle", "category": "Marketing — promo assets", "routedTo": "Cindy", "status": "Resolved", "firstResponse": "2m", "resolution": "22m" },
+    { "id": "ENQ-5012", "time": "09:14", "memberId": "GV-1012", "store": "Go Vita Victoria Park", "category": "Product & pricing (multivitamin)", "routedTo": "Bob", "status": "Resolved", "firstResponse": "1m", "resolution": "14m" },
+    { "id": "ENQ-5013", "time": "09:40", "memberId": "GV-1012", "store": "Go Vita Victoria Park", "category": "Marketing — promo assets", "routedTo": "Cindy", "status": "Resolved", "firstResponse": "2m", "resolution": "22m" },
     { "id": "ENQ-5014", "time": "10:05", "memberId": "GV-1007", "store": "Go Vita Bondi Junction", "category": "Order status & delivery", "routedTo": "Bob", "status": "Resolved", "firstResponse": "1m", "resolution": "9m" },
     { "id": "ENQ-5015", "time": "10:22", "memberId": "GV-1085", "store": "Go Vita Ballarat", "category": "Back-order query", "routedTo": "Bob", "status": "In progress", "firstResponse": "2m", "resolution": "—" },
     { "id": "ENQ-5016", "time": "11:01", "memberId": "GV-1023", "store": "Go Vita Toowoomba", "category": "Seasonal marketing (Spring)", "routedTo": "Cindy", "status": "Resolved", "firstResponse": "3m", "resolution": "31m" },
     { "id": "ENQ-5017", "time": "11:48", "memberId": "GV-1031", "store": "Go Vita Glenelg", "category": "How-to / general", "routedTo": "Alice", "status": "Resolved", "firstResponse": "1m", "resolution": "4m" },
     { "id": "ENQ-5018", "time": "12:15", "memberId": "GV-1066", "store": "Go Vita Chatswood", "category": "Pricing — bulk honey", "routedTo": "Bob", "status": "Open", "firstResponse": "2m", "resolution": "—" },
     { "id": "ENQ-5019", "time": "13:02", "memberId": "GV-1078", "store": "Go Vita Noosa", "category": "Logo pack request", "routedTo": "Cindy", "status": "Resolved", "firstResponse": "1m", "resolution": "12m" },
-    { "id": "ENQ-5020", "time": "13:30", "memberId": "GV-1012", "store": "Go Vita Fremantle", "category": "Delivery ETA (SO-24825)", "routedTo": "Bob", "status": "Resolved", "firstResponse": "1m", "resolution": "7m" }
+    { "id": "ENQ-5020", "time": "13:30", "memberId": "GV-1012", "store": "Go Vita Victoria Park", "category": "Delivery ETA (SO-24825)", "routedTo": "Bob", "status": "Resolved", "firstResponse": "1m", "resolution": "7m" }
   ]
 }

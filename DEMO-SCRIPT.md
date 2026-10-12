@@ -1,7 +1,7 @@
 # Go Vita — Board Demo Runsheet (~20 minutes)
 
 **Audience:** Board of Directors + Member Representatives
-**Format:** You play **one customer — Tom Harper, the new owner of Go Vita Fremantle (member GV-1012, Silver tier)** — and you only ever message **Alice**. Each request builds on the last, so the board sees one continuous member journey. Behind the scenes Alice routes to **Bob** (accounts) or **Cindy** (marketing) and brings back one consolidated reply.
+**Format:** You play **one customer — Tom Harper, the new owner of Go Vita Victoria Park (member GV-1012, Silver tier)** — and you only ever message **Alice**. Each request builds on the last, so the board sees one continuous member journey. Behind the scenes Alice routes to **Bob** (accounts) or **Cindy** (marketing) and brings back one consolidated reply.
 **Live site:** https://bmcevoyau.github.io/pipes-demo-govita/
 
 > All members, orders, pricing and assets are fictional demo data.
@@ -19,12 +19,12 @@ handled → close.
 ## 0 · Open (2 min)
 Show the **home page**. *"110+ independently owned stores, one front door. A member asks once; the
 right specialist answers every time — and the member never has to know who did what. Today you're
-Tom, who's just taken over our Fremantle store."*
+Tom, who's just taken over our Victoria Park store."*
 
 ---
 
 ## 1 · "Who do I ask?" — Alice answers directly (2 min)
-> **Prompt:** *"Hi, I've just taken over the Fremantle store and I'm not sure who handles what. Can you point me in the right direction, and where do I find your marketing materials?"*
+> **Prompt:** *"Hi, I've just taken over the Victoria Park store and I'm not sure who handles what. Can you point me in the right direction, and where do I find your marketing materials?"*
 
 **Expected:** Alice welcomes Tom, explains routing (accounts → Bob, marketing → Cindy, general → Alice),
 links the marketing page.
@@ -60,8 +60,8 @@ prices by tier, and captures the order. *Members:* trustworthy advice + instant,
 > **Prompt:** *"Yes please — what have you got?"*
 
 **Expected:** Cindy returns a pack tied to Tom's immune range, with live download links — leading with
-**store-personalised "ARRIVING SOON · Go Vita Fremantle"** assets so he can promote before stock lands:
-- ★ Personalised immune window poster + social tile reading **"Go Vita Fremantle"**
+**store-personalised "ARRIVING SOON · Go Vita Victoria Park"** assets so he can promote before stock lands:
+- ★ Personalised immune window poster + social tile reading **"Go Vita Victoria Park"**
 - Immune shelf-talker, poster, social tile, web banner (D3 + C + Zinc theme)
 - Seasonal **Spring Reset** set + current **Go Mag** cover; logos (primary/reverse/Rewards)
 - Cindy offers to tweak wording / swap "IN STORE NOW" ↔ "ARRIVING SOON" / add specific SKUs.
@@ -78,7 +78,7 @@ range they just bought, before it even arrives.
 > **Prompt:** *"Thanks! Can you tell me when my order will arrive?"*
 
 **Expected:** **SO-24825** is now **Dispatched** via StarTrack, tracking **ST4472651AU**, ETA
-Fremantle / Perth Metro **Mon 19 – Wed 21 Oct 2026** (5–7 business days).
+Victoria Park / Perth Metro **Mon 19 – Wed 21 Oct 2026** (5–7 business days).
 **Why it lands** — *Board:* real-time order visibility. *Members:* no phone tag for a status check.
 
 ---
