@@ -36,7 +36,8 @@
     { "sku": "GV-SPT-0401", "name": "ProFuel Whey Protein Vanilla 1kg", "brand": "ProFuel", "category": "Sports Nutrition", "packSize": "1kg", "unitsPerCarton": 6, "wholesale": 28.00, "rrp": 54.95, "status": "In stock" },
     { "sku": "GV-SPT-0402", "name": "ProFuel Plant Protein Chocolate 1kg", "brand": "ProFuel", "category": "Sports Nutrition", "packSize": "1kg", "unitsPerCarton": 6, "wholesale": 30.50, "rrp": 59.95, "status": "In stock" },
     { "sku": "GV-SPT-0403", "name": "ProFuel Creatine Monohydrate 300g", "brand": "ProFuel", "category": "Sports Nutrition", "packSize": "300g", "unitsPerCarton": 10, "wholesale": 14.20, "rrp": 29.95, "status": "In stock" },
-    { "sku": "GV-SPT-0404", "name": "ProFuel BCAA Electrolytes Berry 400g", "brand": "ProFuel", "category": "Sports Nutrition", "packSize": "400g", "unitsPerCarton": 10, "wholesale": 16.80, "rrp": 34.95, "status": "Back-order" },
+    { "sku": "GV-SPT-0404", "name": "ProFuel BCAA Electrolytes Berry 400g", "brand": "ProFuel", "category": "Sports Nutrition", "packSize": "400g", "unitsPerCarton": 10, "wholesale": 16.80, "rrp": 34.95, "status": "Low stock" },
+    { "sku": "GV-SPT-0405", "name": "ProFuel BCAA Electrolytes Tropical 400g", "brand": "ProFuel", "category": "Sports Nutrition", "packSize": "400g", "unitsPerCarton": 10, "wholesale": 16.80, "rrp": 34.95, "status": "In stock" },
 
     { "sku": "GV-WGT-0501", "name": "SlimLine Green Tea Metabolism 90 caps", "brand": "SlimLine", "category": "Weight Management", "packSize": "90 capsules", "unitsPerCarton": 8, "wholesale": 11.30, "rrp": 24.95, "status": "In stock" },
     { "sku": "GV-WGT-0502", "name": "SlimLine Meal Replacement Shake Vanilla 750g", "brand": "SlimLine", "category": "Weight Management", "packSize": "750g", "unitsPerCarton": 6, "wholesale": 19.90, "rrp": 39.95, "status": "In stock" },

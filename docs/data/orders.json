@@ -1,478 +1,894 @@
 {
-  "_meta": {
-    "description": "Go Vita member stock orders placed with the central distribution centre. Each order is a wholesale replenishment order by a member store. Fictional demo data.",
-    "currency": "AUD",
-    "owner": "Bob (Member Accounts)",
-    "keyedTo": "docs/data/members.json memberId",
-    "pricing": "line unitWholesale = catalogue wholesale (ex-GST). Member tier discount applied to subtotal, then freight (free when net >= $300), then 10% GST.",
-    "tierDiscounts": { "Gold": "10%", "Silver": "6%", "Bronze": "3%" },
-    "freightRule": "Free freight on orders $300+ net; otherwise $15.00 flat.",
-    "statusLegend": {
-      "Processing": "Order received, being picked at the DC (grey)",
-      "Dispatched": "Picked and handed to carrier (amber)",
-      "In transit": "On the road with carrier (amber)",
-      "Delivered": "Received by member store (green)",
-      "Back-order": "One or more lines awaiting stock (grey)"
-    }
-  },
-
-  "orders": [
-    {
-      "orderId": "SO-24817",
-      "memberId": "GV-1007",
-      "store": "Go Vita Bondi Junction",
-      "state": "NSW",
-      "tier": "Gold",
-      "orderDate": "2026-10-09",
-      "deliveryStatus": "In transit",
-      "carrier": "StarTrack",
-      "tracking": "ST4471902AU",
-      "lineItems": [
-        { "sku": "GV-VIT-0101", "name": "VitaWell Magnesium Glycinate 120 caps", "category": "Vitamins & Supplements", "qty": 12, "unitWholesale": 18.5, "lineTotal": 222 },
-        { "sku": "GV-VIT-0105", "name": "OmegaPure Wild Fish Oil 1500mg 200 caps", "category": "Vitamins & Supplements", "qty": 6, "unitWholesale": 21, "lineTotal": 126 },
-        { "sku": "GV-IMM-0703", "name": "FloraBalance Probiotic 50 Billion 30 caps", "category": "Immune & Wellness", "qty": 6, "unitWholesale": 17.4, "lineTotal": 104.4 },
-        { "sku": "GV-SPT-0401", "name": "ProFuel Whey Protein Vanilla 1kg", "category": "Sports Nutrition", "qty": 6, "unitWholesale": 28, "lineTotal": 168 }
-      ],
-      "subtotalExGst": 620.4,
-      "tierDiscountPct": 10,
-      "tierDiscount": 62.04,
-      "freight": 0,
-      "gst": 55.84,
-      "totalIncGst": 614.2,
-      "itemCount": 30
-    },
-    {
-      "orderId": "SO-24790",
-      "memberId": "GV-1007",
-      "store": "Go Vita Bondi Junction",
-      "state": "NSW",
-      "tier": "Gold",
-      "orderDate": "2026-09-28",
-      "deliveryStatus": "Delivered",
-      "carrier": "StarTrack",
-      "tracking": "ST4458113AU",
-      "lineItems": [
-        { "sku": "GV-ORG-0305", "name": "GoldenLand Organic Manuka Honey MGO 100+ 250g", "category": "Organic & Whole Foods", "qty": 12, "unitWholesale": 15.75, "lineTotal": 189 },
-        { "sku": "GV-HRB-0201", "name": "HerbaVital Ashwagandha KSM-66 60 caps", "category": "Herbal & Naturopathic", "qty": 6, "unitWholesale": 16.2, "lineTotal": 97.2 },
-        { "sku": "GV-VIT-0102", "name": "VitaWell Vitamin D3 1000IU 250 caps", "category": "Vitamins & Supplements", "qty": 12, "unitWholesale": 12.9, "lineTotal": 154.8 }
-      ],
-      "subtotalExGst": 441,
-      "tierDiscountPct": 10,
-      "tierDiscount": 44.1,
-      "freight": 0,
-      "gst": 39.69,
-      "totalIncGst": 436.59,
-      "itemCount": 30
-    },
-    {
-      "orderId": "SO-24655",
-      "memberId": "GV-1007",
-      "store": "Go Vita Bondi Junction",
-      "state": "NSW",
-      "tier": "Gold",
-      "orderDate": "2026-09-05",
-      "deliveryStatus": "Delivered",
-      "carrier": "StarTrack",
-      "tracking": "ST4399821AU",
-      "lineItems": [
-        { "sku": "GV-SPT-0401", "name": "ProFuel Whey Protein Vanilla 1kg", "category": "Sports Nutrition", "qty": 12, "unitWholesale": 28, "lineTotal": 336 },
-        { "sku": "GV-SPT-0403", "name": "ProFuel Creatine Monohydrate 300g", "category": "Sports Nutrition", "qty": 10, "unitWholesale": 14.2, "lineTotal": 142 },
-        { "sku": "GV-VIT-0103", "name": "VitaWell High-Strength Vitamin C 1000mg 90 tabs", "category": "Vitamins & Supplements", "qty": 8, "unitWholesale": 9.75, "lineTotal": 78 }
-      ],
-      "subtotalExGst": 556,
-      "tierDiscountPct": 10,
-      "tierDiscount": 55.6,
-      "freight": 0,
-      "gst": 50.04,
-      "totalIncGst": 550.44,
-      "itemCount": 30
-    },
-    {
-      "orderId": "SO-24825",
-      "memberId": "GV-1012",
-      "store": "Go Vita Victoria Park",
-      "state": "WA",
-      "tier": "Silver",
-      "orderDate": "2026-10-12",
-      "deliveryStatus": "Dispatched",
-      "carrier": "StarTrack",
-      "tracking": "ST4472651AU",
-      "lineItems": [
-        { "sku": "GV-VIT-0102", "name": "VitaWell Vitamin D3 1000IU 250 caps", "category": "Vitamins & Supplements", "qty": 90, "unitWholesale": 12.9, "lineTotal": 1161 },
-        { "sku": "GV-VIT-0103", "name": "VitaWell High-Strength Vitamin C 1000mg 90 tabs", "category": "Vitamins & Supplements", "qty": 80, "unitWholesale": 9.75, "lineTotal": 780 },
-        { "sku": "GV-VIT-0104", "name": "VitaWell Zinc Picolinate 25mg 100 caps", "category": "Vitamins & Supplements", "qty": 64, "unitWholesale": 8.4, "lineTotal": 537.6 }
-      ],
-      "subtotalExGst": 2478.6,
-      "tierDiscountPct": 6,
-      "tierDiscount": 148.72,
-      "freight": 0,
-      "gst": 232.99,
-      "totalIncGst": 2562.87,
-      "itemCount": 234
-    },
-    {
-      "orderId": "SO-24826",
-      "memberId": "GV-1012",
-      "store": "Go Vita Victoria Park",
-      "state": "WA",
-      "tier": "Silver",
-      "orderDate": "2026-10-12",
-      "deliveryStatus": "Back-order",
-      "carrier": null,
-      "tracking": null,
-      "lineItems": [
-        { "sku": "GV-SPT-0404", "name": "ProFuel BCAA Electrolytes Berry 400g", "category": "Sports Nutrition", "qty": 200, "unitWholesale": 16.8, "lineTotal": 3360 }
-      ],
-      "subtotalExGst": 3360,
-      "tierDiscountPct": 6,
-      "tierDiscount": 201.6,
-      "freight": 0,
-      "gst": 315.84,
-      "totalIncGst": 3474.24,
-      "itemCount": 200
-    },
-    {
-      "orderId": "SO-24744",
-      "memberId": "GV-1012",
-      "store": "Go Vita Victoria Park",
-      "state": "WA",
-      "tier": "Silver",
-      "orderDate": "2026-09-19",
-      "deliveryStatus": "Delivered",
-      "carrier": "Aramex",
-      "tracking": "AMX71220934",
-      "lineItems": [
-        { "sku": "GV-VIT-0104", "name": "VitaWell Zinc Picolinate 25mg 100 caps", "category": "Vitamins & Supplements", "qty": 8, "unitWholesale": 8.4, "lineTotal": 67.2 },
-        { "sku": "GV-IMM-0701", "name": "ImmuGuard Elderberry & Zinc Lozenges 60s", "category": "Immune & Wellness", "qty": 10, "unitWholesale": 9.6, "lineTotal": 96 },
-        { "sku": "GV-HRB-0204", "name": "SleepEase Valerian & Passionflower 60 tabs", "category": "Herbal & Naturopathic", "qty": 8, "unitWholesale": 10.5, "lineTotal": 84 }
-      ],
-      "subtotalExGst": 247.2,
-      "tierDiscountPct": 6,
-      "tierDiscount": 14.83,
-      "freight": 15,
-      "gst": 24.74,
-      "totalIncGst": 272.11,
-      "itemCount": 26
-    },
-    {
-      "orderId": "SO-24810",
-      "memberId": "GV-1023",
-      "store": "Go Vita Toowoomba",
-      "state": "QLD",
-      "tier": "Gold",
-      "orderDate": "2026-10-08",
-      "deliveryStatus": "Dispatched",
-      "carrier": "TNT",
-      "tracking": "TNT90552117",
-      "lineItems": [
-        { "sku": "GV-SPT-0402", "name": "ProFuel Plant Protein Chocolate 1kg", "category": "Sports Nutrition", "qty": 6, "unitWholesale": 30.5, "lineTotal": 183 },
-        { "sku": "GV-SPT-0404", "name": "ProFuel BCAA Electrolytes Berry 400g", "category": "Sports Nutrition", "qty": 10, "unitWholesale": 16.8, "lineTotal": 168 },
-        { "sku": "GV-WGT-0502", "name": "SlimLine Meal Replacement Shake Vanilla 750g", "category": "Weight Management", "qty": 6, "unitWholesale": 19.9, "lineTotal": 119.4 }
-      ],
-      "subtotalExGst": 470.4,
-      "tierDiscountPct": 10,
-      "tierDiscount": 47.04,
-      "freight": 0,
-      "gst": 42.34,
-      "totalIncGst": 465.7,
-      "itemCount": 22
-    },
-    {
-      "orderId": "SO-24701",
-      "memberId": "GV-1023",
-      "store": "Go Vita Toowoomba",
-      "state": "QLD",
-      "tier": "Gold",
-      "orderDate": "2026-09-12",
-      "deliveryStatus": "Delivered",
-      "carrier": "TNT",
-      "tracking": "TNT90488044",
-      "lineItems": [
-        { "sku": "GV-VIT-0101", "name": "VitaWell Magnesium Glycinate 120 caps", "category": "Vitamins & Supplements", "qty": 6, "unitWholesale": 18.5, "lineTotal": 111 },
-        { "sku": "GV-VIT-0105", "name": "OmegaPure Wild Fish Oil 1500mg 200 caps", "category": "Vitamins & Supplements", "qty": 6, "unitWholesale": 21, "lineTotal": 126 },
-        { "sku": "GV-HRB-0202", "name": "HerbaVital Turmeric + BioPerine 60 tabs", "category": "Herbal & Naturopathic", "qty": 6, "unitWholesale": 13.6, "lineTotal": 81.6 }
-      ],
-      "subtotalExGst": 318.6,
-      "tierDiscountPct": 10,
-      "tierDiscount": 31.86,
-      "freight": 15,
-      "gst": 30.17,
-      "totalIncGst": 331.91,
-      "itemCount": 18
-    },
-    {
-      "orderId": "SO-24819",
-      "memberId": "GV-1031",
-      "store": "Go Vita Glenelg",
-      "state": "SA",
-      "tier": "Silver",
-      "orderDate": "2026-10-09",
-      "deliveryStatus": "In transit",
-      "carrier": "StarTrack",
-      "tracking": "ST4470338AU",
-      "lineItems": [
-        { "sku": "GV-ORG-0302", "name": "PureHarvest Organic Coconut Oil 500ml", "category": "Organic & Whole Foods", "qty": 12, "unitWholesale": 6.8, "lineTotal": 81.6 },
-        { "sku": "GV-ORG-0304", "name": "NutriSeed Raw Almonds 750g", "category": "Organic & Whole Foods", "qty": 10, "unitWholesale": 9.1, "lineTotal": 91 },
-        { "sku": "GV-BTY-0602", "name": "NaturaGlow Magnesium Body Butter 200g", "category": "Natural Beauty & Skincare", "qty": 12, "unitWholesale": 10.4, "lineTotal": 124.8 }
-      ],
-      "subtotalExGst": 297.4,
-      "tierDiscountPct": 6,
-      "tierDiscount": 17.84,
-      "freight": 15,
-      "gst": 29.46,
-      "totalIncGst": 324.02,
-      "itemCount": 34
-    },
-    {
-      "orderId": "SO-24760",
-      "memberId": "GV-1031",
-      "store": "Go Vita Glenelg",
-      "state": "SA",
-      "tier": "Silver",
-      "orderDate": "2026-09-24",
-      "deliveryStatus": "Delivered",
-      "carrier": "StarTrack",
-      "tracking": "ST4449107AU",
-      "lineItems": [
-        { "sku": "GV-IMM-0702", "name": "ImmuGuard Olive Leaf Extract 50ml", "category": "Immune & Wellness", "qty": 12, "unitWholesale": 12.1, "lineTotal": 145.2 },
-        { "sku": "GV-VIT-0103", "name": "VitaWell High-Strength Vitamin C 1000mg 90 tabs", "category": "Vitamins & Supplements", "qty": 8, "unitWholesale": 9.75, "lineTotal": 78 }
-      ],
-      "subtotalExGst": 223.2,
-      "tierDiscountPct": 6,
-      "tierDiscount": 13.39,
-      "freight": 15,
-      "gst": 22.48,
-      "totalIncGst": 247.29,
-      "itemCount": 20
-    },
-    {
-      "orderId": "SO-24805",
-      "memberId": "GV-1044",
-      "store": "Go Vita Launceston",
-      "state": "TAS",
-      "tier": "Bronze",
-      "orderDate": "2026-10-07",
-      "deliveryStatus": "Delivered",
-      "carrier": "Australia Post",
-      "tracking": "AP556712903",
-      "lineItems": [
-        { "sku": "GV-HRB-0203", "name": "HerbaVital Milk Thistle 35000mg 60 caps", "category": "Herbal & Naturopathic", "qty": 6, "unitWholesale": 11.9, "lineTotal": 71.4 },
-        { "sku": "GV-VIT-0102", "name": "VitaWell Vitamin D3 1000IU 250 caps", "category": "Vitamins & Supplements", "qty": 6, "unitWholesale": 12.9, "lineTotal": 77.4 },
-        { "sku": "GV-BTY-0603", "name": "PureClean Natural Deodorant Citrus 60g", "category": "Natural Beauty & Skincare", "qty": 16, "unitWholesale": 4.95, "lineTotal": 79.2 }
-      ],
-      "subtotalExGst": 228,
-      "tierDiscountPct": 3,
-      "tierDiscount": 6.84,
-      "freight": 15,
-      "gst": 23.62,
-      "totalIncGst": 259.78,
-      "itemCount": 28
-    },
-    {
-      "orderId": "SO-24821",
-      "memberId": "GV-1052",
-      "store": "Go Vita Geelong",
-      "state": "VIC",
-      "tier": "Gold",
-      "orderDate": "2026-10-10",
-      "deliveryStatus": "Processing",
-      "carrier": null,
-      "tracking": null,
-      "lineItems": [
-        { "sku": "GV-SPT-0401", "name": "ProFuel Whey Protein Vanilla 1kg", "category": "Sports Nutrition", "qty": 12, "unitWholesale": 28, "lineTotal": 336 },
-        { "sku": "GV-SPT-0403", "name": "ProFuel Creatine Monohydrate 300g", "category": "Sports Nutrition", "qty": 10, "unitWholesale": 14.2, "lineTotal": 142 },
-        { "sku": "GV-SPT-0404", "name": "ProFuel BCAA Electrolytes Berry 400g", "category": "Sports Nutrition", "qty": 10, "unitWholesale": 16.8, "lineTotal": 168 },
-        { "sku": "GV-VIT-0101", "name": "VitaWell Magnesium Glycinate 120 caps", "category": "Vitamins & Supplements", "qty": 12, "unitWholesale": 18.5, "lineTotal": 222 }
-      ],
-      "subtotalExGst": 868,
-      "tierDiscountPct": 10,
-      "tierDiscount": 86.8,
-      "freight": 0,
-      "gst": 78.12,
-      "totalIncGst": 859.32,
-      "itemCount": 44
-    },
-    {
-      "orderId": "SO-24777",
-      "memberId": "GV-1052",
-      "store": "Go Vita Geelong",
-      "state": "VIC",
-      "tier": "Gold",
-      "orderDate": "2026-09-26",
-      "deliveryStatus": "Delivered",
-      "carrier": "StarTrack",
-      "tracking": "ST4452880AU",
-      "lineItems": [
-        { "sku": "GV-ORG-0305", "name": "GoldenLand Organic Manuka Honey MGO 100+ 250g", "category": "Organic & Whole Foods", "qty": 6, "unitWholesale": 15.75, "lineTotal": 94.5 },
-        { "sku": "GV-HRB-0201", "name": "HerbaVital Ashwagandha KSM-66 60 caps", "category": "Herbal & Naturopathic", "qty": 6, "unitWholesale": 16.2, "lineTotal": 97.2 },
-        { "sku": "GV-IMM-0703", "name": "FloraBalance Probiotic 50 Billion 30 caps", "category": "Immune & Wellness", "qty": 6, "unitWholesale": 17.4, "lineTotal": 104.4 }
-      ],
-      "subtotalExGst": 296.1,
-      "tierDiscountPct": 10,
-      "tierDiscount": 29.61,
-      "freight": 15,
-      "gst": 28.15,
-      "totalIncGst": 309.64,
-      "itemCount": 18
-    },
-    {
-      "orderId": "SO-24818",
-      "memberId": "GV-1066",
-      "store": "Go Vita Chatswood",
-      "state": "NSW",
-      "tier": "Gold",
-      "orderDate": "2026-10-09",
-      "deliveryStatus": "In transit",
-      "carrier": "StarTrack",
-      "tracking": "ST4470551AU",
-      "lineItems": [
-        { "sku": "GV-VIT-0101", "name": "VitaWell Magnesium Glycinate 120 caps", "category": "Vitamins & Supplements", "qty": 12, "unitWholesale": 18.5, "lineTotal": 222 },
-        { "sku": "GV-VIT-0102", "name": "VitaWell Vitamin D3 1000IU 250 caps", "category": "Vitamins & Supplements", "qty": 12, "unitWholesale": 12.9, "lineTotal": 154.8 },
-        { "sku": "GV-VIT-0105", "name": "OmegaPure Wild Fish Oil 1500mg 200 caps", "category": "Vitamins & Supplements", "qty": 6, "unitWholesale": 21, "lineTotal": 126 },
-        { "sku": "GV-IMM-0703", "name": "FloraBalance Probiotic 50 Billion 30 caps", "category": "Immune & Wellness", "qty": 6, "unitWholesale": 17.4, "lineTotal": 104.4 }
-      ],
-      "subtotalExGst": 607.2,
-      "tierDiscountPct": 10,
-      "tierDiscount": 60.72,
-      "freight": 0,
-      "gst": 54.65,
-      "totalIncGst": 601.13,
-      "itemCount": 36
-    },
-    {
-      "orderId": "SO-24733",
-      "memberId": "GV-1066",
-      "store": "Go Vita Chatswood",
-      "state": "NSW",
-      "tier": "Gold",
-      "orderDate": "2026-09-16",
-      "deliveryStatus": "Delivered",
-      "carrier": "StarTrack",
-      "tracking": "ST4442009AU",
-      "lineItems": [
-        { "sku": "GV-SPT-0402", "name": "ProFuel Plant Protein Chocolate 1kg", "category": "Sports Nutrition", "qty": 6, "unitWholesale": 30.5, "lineTotal": 183 },
-        { "sku": "GV-WGT-0501", "name": "SlimLine Green Tea Metabolism 90 caps", "category": "Weight Management", "qty": 8, "unitWholesale": 11.3, "lineTotal": 90.4 }
-      ],
-      "subtotalExGst": 273.4,
-      "tierDiscountPct": 10,
-      "tierDiscount": 27.34,
-      "freight": 15,
-      "gst": 26.11,
-      "totalIncGst": 287.17,
-      "itemCount": 14
-    },
-    {
-      "orderId": "SO-24814",
-      "memberId": "GV-1078",
-      "store": "Go Vita Noosa",
-      "state": "QLD",
-      "tier": "Silver",
-      "orderDate": "2026-10-08",
-      "deliveryStatus": "Dispatched",
-      "carrier": "Aramex",
-      "tracking": "AMX71255610",
-      "lineItems": [
-        { "sku": "GV-BTY-0601", "name": "NaturaGlow Rosehip Oil 30ml", "category": "Natural Beauty & Skincare", "qty": 12, "unitWholesale": 8.9, "lineTotal": 106.8 },
-        { "sku": "GV-BTY-0602", "name": "NaturaGlow Magnesium Body Butter 200g", "category": "Natural Beauty & Skincare", "qty": 12, "unitWholesale": 10.4, "lineTotal": 124.8 },
-        { "sku": "GV-ORG-0303", "name": "NutriSeed Organic Chia Seeds 500g", "category": "Organic & Whole Foods", "qty": 12, "unitWholesale": 5.4, "lineTotal": 64.8 }
-      ],
-      "subtotalExGst": 296.4,
-      "tierDiscountPct": 6,
-      "tierDiscount": 17.78,
-      "freight": 15,
-      "gst": 29.36,
-      "totalIncGst": 322.98,
-      "itemCount": 36
-    },
-    {
-      "orderId": "SO-24699",
-      "memberId": "GV-1078",
-      "store": "Go Vita Noosa",
-      "state": "QLD",
-      "tier": "Silver",
-      "orderDate": "2026-09-11",
-      "deliveryStatus": "Delivered",
-      "carrier": "Aramex",
-      "tracking": "AMX71198702",
-      "lineItems": [
-        { "sku": "GV-VIT-0104", "name": "VitaWell Zinc Picolinate 25mg 100 caps", "category": "Vitamins & Supplements", "qty": 8, "unitWholesale": 8.4, "lineTotal": 67.2 },
-        { "sku": "GV-HRB-0204", "name": "SleepEase Valerian & Passionflower 60 tabs", "category": "Herbal & Naturopathic", "qty": 8, "unitWholesale": 10.5, "lineTotal": 84 }
-      ],
-      "subtotalExGst": 151.2,
-      "tierDiscountPct": 6,
-      "tierDiscount": 9.07,
-      "freight": 15,
-      "gst": 15.71,
-      "totalIncGst": 172.84,
-      "itemCount": 16
-    },
-    {
-      "orderId": "SO-24820",
-      "memberId": "GV-1085",
-      "store": "Go Vita Ballarat",
-      "state": "VIC",
-      "tier": "Gold",
-      "orderDate": "2026-10-10",
-      "deliveryStatus": "Back-order",
-      "carrier": null,
-      "tracking": null,
-      "lineItems": [
-        { "sku": "GV-SPT-0404", "name": "ProFuel BCAA Electrolytes Berry 400g", "category": "Sports Nutrition", "qty": 20, "unitWholesale": 16.8, "lineTotal": 336 },
-        { "sku": "GV-VIT-0101", "name": "VitaWell Magnesium Glycinate 120 caps", "category": "Vitamins & Supplements", "qty": 12, "unitWholesale": 18.5, "lineTotal": 222 }
-      ],
-      "subtotalExGst": 558,
-      "tierDiscountPct": 10,
-      "tierDiscount": 55.8,
-      "freight": 0,
-      "gst": 50.22,
-      "totalIncGst": 552.42,
-      "itemCount": 32
-    },
-    {
-      "orderId": "SO-24766",
-      "memberId": "GV-1085",
-      "store": "Go Vita Ballarat",
-      "state": "VIC",
-      "tier": "Gold",
-      "orderDate": "2026-09-25",
-      "deliveryStatus": "Delivered",
-      "carrier": "StarTrack",
-      "tracking": "ST4450223AU",
-      "lineItems": [
-        { "sku": "GV-ORG-0301", "name": "PureHarvest Organic Rolled Oats 1kg", "category": "Organic & Whole Foods", "qty": 24, "unitWholesale": 4.2, "lineTotal": 100.8 },
-        { "sku": "GV-ORG-0304", "name": "NutriSeed Raw Almonds 750g", "category": "Organic & Whole Foods", "qty": 10, "unitWholesale": 9.1, "lineTotal": 91 },
-        { "sku": "GV-ORG-0302", "name": "PureHarvest Organic Coconut Oil 500ml", "category": "Organic & Whole Foods", "qty": 12, "unitWholesale": 6.8, "lineTotal": 81.6 }
-      ],
-      "subtotalExGst": 273.4,
-      "tierDiscountPct": 10,
-      "tierDiscount": 27.34,
-      "freight": 15,
-      "gst": 26.11,
-      "totalIncGst": 287.17,
-      "itemCount": 46
-    },
-    {
-      "orderId": "SO-24808",
-      "memberId": "GV-1090",
-      "store": "Go Vita Darwin",
-      "state": "NT",
-      "tier": "Bronze",
-      "orderDate": "2026-10-07",
-      "deliveryStatus": "In transit",
-      "carrier": "TNT",
-      "tracking": "TNT90549870",
-      "lineItems": [
-        { "sku": "GV-IMM-0701", "name": "ImmuGuard Elderberry & Zinc Lozenges 60s", "category": "Immune & Wellness", "qty": 10, "unitWholesale": 9.6, "lineTotal": 96 },
-        { "sku": "GV-IMM-0702", "name": "ImmuGuard Olive Leaf Extract 50ml", "category": "Immune & Wellness", "qty": 12, "unitWholesale": 12.1, "lineTotal": 145.2 },
-        { "sku": "GV-VIT-0103", "name": "VitaWell High-Strength Vitamin C 1000mg 90 tabs", "category": "Vitamins & Supplements", "qty": 8, "unitWholesale": 9.75, "lineTotal": 78 }
-      ],
-      "subtotalExGst": 319.2,
-      "tierDiscountPct": 3,
-      "tierDiscount": 9.58,
-      "freight": 0,
-      "gst": 30.96,
-      "totalIncGst": 340.58,
-      "itemCount": 30
-    }
-  ]
+   "_meta" : {
+      "currency" : "AUD",
+      "description" : "Go Vita member stock orders placed with the central distribution centre. Each order is a wholesale replenishment order by a member store. Fictional demo data.",
+      "freightRule" : "Free freight on orders $300+ net; otherwise $15.00 flat.",
+      "keyedTo" : "docs/data/members.json memberId",
+      "owner" : "Bob (Member Accounts)",
+      "pricing" : "line unitWholesale = catalogue wholesale (ex-GST). Member tier discount applied to subtotal, then freight (free when net >= $300), then 10% GST.",
+      "statusLegend" : {
+         "Back-order" : "One or more lines awaiting stock (grey)",
+         "Delivered" : "Received by member store (green)",
+         "Dispatched" : "Picked and handed to carrier (amber)",
+         "In transit" : "On the road with carrier (amber)",
+         "Processing" : "Order received, being picked at the DC (grey)"
+      },
+      "tierDiscounts" : {
+         "Bronze" : "3%",
+         "Gold" : "10%",
+         "Silver" : "6%"
+      }
+   },
+   "orders" : [
+      {
+         "carrier" : "StarTrack",
+         "deliveryStatus" : "In transit",
+         "freight" : 0,
+         "gst" : 55.84,
+         "itemCount" : 30,
+         "lineItems" : [
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 222,
+               "name" : "VitaWell Magnesium Glycinate 120 caps",
+               "qty" : 12,
+               "sku" : "GV-VIT-0101",
+               "unitWholesale" : 18.5
+            },
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 126,
+               "name" : "OmegaPure Wild Fish Oil 1500mg 200 caps",
+               "qty" : 6,
+               "sku" : "GV-VIT-0105",
+               "unitWholesale" : 21
+            },
+            {
+               "category" : "Immune & Wellness",
+               "lineTotal" : 104.4,
+               "name" : "FloraBalance Probiotic 50 Billion 30 caps",
+               "qty" : 6,
+               "sku" : "GV-IMM-0703",
+               "unitWholesale" : 17.4
+            },
+            {
+               "category" : "Sports Nutrition",
+               "lineTotal" : 168,
+               "name" : "ProFuel Whey Protein Vanilla 1kg",
+               "qty" : 6,
+               "sku" : "GV-SPT-0401",
+               "unitWholesale" : 28
+            }
+         ],
+         "memberId" : "GV-1007",
+         "orderDate" : "2026-10-09",
+         "orderId" : "SO-24817",
+         "state" : "NSW",
+         "store" : "Go Vita Bondi Junction",
+         "subtotalExGst" : 620.4,
+         "tier" : "Gold",
+         "tierDiscount" : 62.04,
+         "tierDiscountPct" : 10,
+         "totalIncGst" : 614.2,
+         "tracking" : "ST4471902AU"
+      },
+      {
+         "carrier" : "StarTrack",
+         "deliveryStatus" : "Delivered",
+         "freight" : 0,
+         "gst" : 39.69,
+         "itemCount" : 30,
+         "lineItems" : [
+            {
+               "category" : "Organic & Whole Foods",
+               "lineTotal" : 189,
+               "name" : "GoldenLand Organic Manuka Honey MGO 100+ 250g",
+               "qty" : 12,
+               "sku" : "GV-ORG-0305",
+               "unitWholesale" : 15.75
+            },
+            {
+               "category" : "Herbal & Naturopathic",
+               "lineTotal" : 97.2,
+               "name" : "HerbaVital Ashwagandha KSM-66 60 caps",
+               "qty" : 6,
+               "sku" : "GV-HRB-0201",
+               "unitWholesale" : 16.2
+            },
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 154.8,
+               "name" : "VitaWell Vitamin D3 1000IU 250 caps",
+               "qty" : 12,
+               "sku" : "GV-VIT-0102",
+               "unitWholesale" : 12.9
+            }
+         ],
+         "memberId" : "GV-1007",
+         "orderDate" : "2026-09-28",
+         "orderId" : "SO-24790",
+         "state" : "NSW",
+         "store" : "Go Vita Bondi Junction",
+         "subtotalExGst" : 441,
+         "tier" : "Gold",
+         "tierDiscount" : 44.1,
+         "tierDiscountPct" : 10,
+         "totalIncGst" : 436.59,
+         "tracking" : "ST4458113AU"
+      },
+      {
+         "carrier" : "StarTrack",
+         "deliveryStatus" : "Delivered",
+         "freight" : 0,
+         "gst" : 50.04,
+         "itemCount" : 30,
+         "lineItems" : [
+            {
+               "category" : "Sports Nutrition",
+               "lineTotal" : 336,
+               "name" : "ProFuel Whey Protein Vanilla 1kg",
+               "qty" : 12,
+               "sku" : "GV-SPT-0401",
+               "unitWholesale" : 28
+            },
+            {
+               "category" : "Sports Nutrition",
+               "lineTotal" : 142,
+               "name" : "ProFuel Creatine Monohydrate 300g",
+               "qty" : 10,
+               "sku" : "GV-SPT-0403",
+               "unitWholesale" : 14.2
+            },
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 78,
+               "name" : "VitaWell High-Strength Vitamin C 1000mg 90 tabs",
+               "qty" : 8,
+               "sku" : "GV-VIT-0103",
+               "unitWholesale" : 9.75
+            }
+         ],
+         "memberId" : "GV-1007",
+         "orderDate" : "2026-09-05",
+         "orderId" : "SO-24655",
+         "state" : "NSW",
+         "store" : "Go Vita Bondi Junction",
+         "subtotalExGst" : 556,
+         "tier" : "Gold",
+         "tierDiscount" : 55.6,
+         "tierDiscountPct" : 10,
+         "totalIncGst" : 550.44,
+         "tracking" : "ST4399821AU"
+      },
+      {
+         "carrier" : "StarTrack",
+         "deliveryStatus" : "Dispatched",
+         "freight" : 0,
+         "gst" : 232.99,
+         "itemCount" : 234,
+         "lineItems" : [
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 1161,
+               "name" : "VitaWell Vitamin D3 1000IU 250 caps",
+               "qty" : 90,
+               "sku" : "GV-VIT-0102",
+               "unitWholesale" : 12.9
+            },
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 780,
+               "name" : "VitaWell High-Strength Vitamin C 1000mg 90 tabs",
+               "qty" : 80,
+               "sku" : "GV-VIT-0103",
+               "unitWholesale" : 9.75
+            },
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 537.6,
+               "name" : "VitaWell Zinc Picolinate 25mg 100 caps",
+               "qty" : 64,
+               "sku" : "GV-VIT-0104",
+               "unitWholesale" : 8.4
+            }
+         ],
+         "memberId" : "GV-1012",
+         "orderDate" : "2026-10-12",
+         "orderId" : "SO-24825",
+         "state" : "WA",
+         "store" : "Go Vita Victoria Park",
+         "subtotalExGst" : 2478.6,
+         "tier" : "Silver",
+         "tierDiscount" : 148.72,
+         "tierDiscountPct" : 6,
+         "totalIncGst" : 2562.87,
+         "tracking" : "ST4472651AU"
+      },
+      {
+         "carrier" : null,
+         "deliveryStatus" : "Back-order",
+         "freight" : 0,
+         "fulfilment" : {
+            "availableNowCartons" : 8,
+            "availableNowUnits" : 80,
+            "backorderCartons" : 12,
+            "backorderUnits" : 120,
+            "closeMatchName" : "ProFuel BCAA Electrolytes Tropical 400g",
+            "closeMatchSku" : "GV-SPT-0405",
+            "options" : [
+               "Hold & ship complete when restocked (~2026-10-26)",
+               "Partial ship 8 cartons now + reserve-and-notify the remaining 12",
+               "Part-fill now: 8 cartons Berry + 12 cartons Tropical (close-match, in stock) = fully stocked today"
+            ],
+            "restockEta" : "2026-10-26"
+         },
+         "gst" : 315.84,
+         "itemCount" : 200,
+         "lineItems" : [
+            {
+               "category" : "Sports Nutrition",
+               "lineTotal" : 3360,
+               "name" : "ProFuel BCAA Electrolytes Berry 400g",
+               "qty" : 200,
+               "sku" : "GV-SPT-0404",
+               "unitWholesale" : 16.8
+            }
+         ],
+         "memberId" : "GV-1012",
+         "orderDate" : "2026-10-12",
+         "orderId" : "SO-24826",
+         "state" : "WA",
+         "store" : "Go Vita Victoria Park",
+         "subtotalExGst" : 3360,
+         "tier" : "Silver",
+         "tierDiscount" : 201.6,
+         "tierDiscountPct" : 6,
+         "totalIncGst" : 3474.24,
+         "tracking" : null
+      },
+      {
+         "carrier" : "Aramex",
+         "deliveryStatus" : "Delivered",
+         "freight" : 15,
+         "gst" : 24.74,
+         "itemCount" : 26,
+         "lineItems" : [
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 67.2,
+               "name" : "VitaWell Zinc Picolinate 25mg 100 caps",
+               "qty" : 8,
+               "sku" : "GV-VIT-0104",
+               "unitWholesale" : 8.4
+            },
+            {
+               "category" : "Immune & Wellness",
+               "lineTotal" : 96,
+               "name" : "ImmuGuard Elderberry & Zinc Lozenges 60s",
+               "qty" : 10,
+               "sku" : "GV-IMM-0701",
+               "unitWholesale" : 9.6
+            },
+            {
+               "category" : "Herbal & Naturopathic",
+               "lineTotal" : 84,
+               "name" : "SleepEase Valerian & Passionflower 60 tabs",
+               "qty" : 8,
+               "sku" : "GV-HRB-0204",
+               "unitWholesale" : 10.5
+            }
+         ],
+         "memberId" : "GV-1012",
+         "orderDate" : "2026-09-19",
+         "orderId" : "SO-24744",
+         "state" : "WA",
+         "store" : "Go Vita Victoria Park",
+         "subtotalExGst" : 247.2,
+         "tier" : "Silver",
+         "tierDiscount" : 14.83,
+         "tierDiscountPct" : 6,
+         "totalIncGst" : 272.11,
+         "tracking" : "AMX71220934"
+      },
+      {
+         "carrier" : "TNT",
+         "deliveryStatus" : "Dispatched",
+         "freight" : 0,
+         "gst" : 42.34,
+         "itemCount" : 22,
+         "lineItems" : [
+            {
+               "category" : "Sports Nutrition",
+               "lineTotal" : 183,
+               "name" : "ProFuel Plant Protein Chocolate 1kg",
+               "qty" : 6,
+               "sku" : "GV-SPT-0402",
+               "unitWholesale" : 30.5
+            },
+            {
+               "category" : "Sports Nutrition",
+               "lineTotal" : 168,
+               "name" : "ProFuel BCAA Electrolytes Berry 400g",
+               "qty" : 10,
+               "sku" : "GV-SPT-0404",
+               "unitWholesale" : 16.8
+            },
+            {
+               "category" : "Weight Management",
+               "lineTotal" : 119.4,
+               "name" : "SlimLine Meal Replacement Shake Vanilla 750g",
+               "qty" : 6,
+               "sku" : "GV-WGT-0502",
+               "unitWholesale" : 19.9
+            }
+         ],
+         "memberId" : "GV-1023",
+         "orderDate" : "2026-10-08",
+         "orderId" : "SO-24810",
+         "state" : "QLD",
+         "store" : "Go Vita Toowoomba",
+         "subtotalExGst" : 470.4,
+         "tier" : "Gold",
+         "tierDiscount" : 47.04,
+         "tierDiscountPct" : 10,
+         "totalIncGst" : 465.7,
+         "tracking" : "TNT90552117"
+      },
+      {
+         "carrier" : "TNT",
+         "deliveryStatus" : "Delivered",
+         "freight" : 15,
+         "gst" : 30.17,
+         "itemCount" : 18,
+         "lineItems" : [
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 111,
+               "name" : "VitaWell Magnesium Glycinate 120 caps",
+               "qty" : 6,
+               "sku" : "GV-VIT-0101",
+               "unitWholesale" : 18.5
+            },
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 126,
+               "name" : "OmegaPure Wild Fish Oil 1500mg 200 caps",
+               "qty" : 6,
+               "sku" : "GV-VIT-0105",
+               "unitWholesale" : 21
+            },
+            {
+               "category" : "Herbal & Naturopathic",
+               "lineTotal" : 81.6,
+               "name" : "HerbaVital Turmeric + BioPerine 60 tabs",
+               "qty" : 6,
+               "sku" : "GV-HRB-0202",
+               "unitWholesale" : 13.6
+            }
+         ],
+         "memberId" : "GV-1023",
+         "orderDate" : "2026-09-12",
+         "orderId" : "SO-24701",
+         "state" : "QLD",
+         "store" : "Go Vita Toowoomba",
+         "subtotalExGst" : 318.6,
+         "tier" : "Gold",
+         "tierDiscount" : 31.86,
+         "tierDiscountPct" : 10,
+         "totalIncGst" : 331.91,
+         "tracking" : "TNT90488044"
+      },
+      {
+         "carrier" : "StarTrack",
+         "deliveryStatus" : "In transit",
+         "freight" : 15,
+         "gst" : 29.46,
+         "itemCount" : 34,
+         "lineItems" : [
+            {
+               "category" : "Organic & Whole Foods",
+               "lineTotal" : 81.6,
+               "name" : "PureHarvest Organic Coconut Oil 500ml",
+               "qty" : 12,
+               "sku" : "GV-ORG-0302",
+               "unitWholesale" : 6.8
+            },
+            {
+               "category" : "Organic & Whole Foods",
+               "lineTotal" : 91,
+               "name" : "NutriSeed Raw Almonds 750g",
+               "qty" : 10,
+               "sku" : "GV-ORG-0304",
+               "unitWholesale" : 9.1
+            },
+            {
+               "category" : "Natural Beauty & Skincare",
+               "lineTotal" : 124.8,
+               "name" : "NaturaGlow Magnesium Body Butter 200g",
+               "qty" : 12,
+               "sku" : "GV-BTY-0602",
+               "unitWholesale" : 10.4
+            }
+         ],
+         "memberId" : "GV-1031",
+         "orderDate" : "2026-10-09",
+         "orderId" : "SO-24819",
+         "state" : "SA",
+         "store" : "Go Vita Glenelg",
+         "subtotalExGst" : 297.4,
+         "tier" : "Silver",
+         "tierDiscount" : 17.84,
+         "tierDiscountPct" : 6,
+         "totalIncGst" : 324.02,
+         "tracking" : "ST4470338AU"
+      },
+      {
+         "carrier" : "StarTrack",
+         "deliveryStatus" : "Delivered",
+         "freight" : 15,
+         "gst" : 22.48,
+         "itemCount" : 20,
+         "lineItems" : [
+            {
+               "category" : "Immune & Wellness",
+               "lineTotal" : 145.2,
+               "name" : "ImmuGuard Olive Leaf Extract 50ml",
+               "qty" : 12,
+               "sku" : "GV-IMM-0702",
+               "unitWholesale" : 12.1
+            },
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 78,
+               "name" : "VitaWell High-Strength Vitamin C 1000mg 90 tabs",
+               "qty" : 8,
+               "sku" : "GV-VIT-0103",
+               "unitWholesale" : 9.75
+            }
+         ],
+         "memberId" : "GV-1031",
+         "orderDate" : "2026-09-24",
+         "orderId" : "SO-24760",
+         "state" : "SA",
+         "store" : "Go Vita Glenelg",
+         "subtotalExGst" : 223.2,
+         "tier" : "Silver",
+         "tierDiscount" : 13.39,
+         "tierDiscountPct" : 6,
+         "totalIncGst" : 247.29,
+         "tracking" : "ST4449107AU"
+      },
+      {
+         "carrier" : "Australia Post",
+         "deliveryStatus" : "Delivered",
+         "freight" : 15,
+         "gst" : 23.62,
+         "itemCount" : 28,
+         "lineItems" : [
+            {
+               "category" : "Herbal & Naturopathic",
+               "lineTotal" : 71.4,
+               "name" : "HerbaVital Milk Thistle 35000mg 60 caps",
+               "qty" : 6,
+               "sku" : "GV-HRB-0203",
+               "unitWholesale" : 11.9
+            },
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 77.4,
+               "name" : "VitaWell Vitamin D3 1000IU 250 caps",
+               "qty" : 6,
+               "sku" : "GV-VIT-0102",
+               "unitWholesale" : 12.9
+            },
+            {
+               "category" : "Natural Beauty & Skincare",
+               "lineTotal" : 79.2,
+               "name" : "PureClean Natural Deodorant Citrus 60g",
+               "qty" : 16,
+               "sku" : "GV-BTY-0603",
+               "unitWholesale" : 4.95
+            }
+         ],
+         "memberId" : "GV-1044",
+         "orderDate" : "2026-10-07",
+         "orderId" : "SO-24805",
+         "state" : "TAS",
+         "store" : "Go Vita Launceston",
+         "subtotalExGst" : 228,
+         "tier" : "Bronze",
+         "tierDiscount" : 6.84,
+         "tierDiscountPct" : 3,
+         "totalIncGst" : 259.78,
+         "tracking" : "AP556712903"
+      },
+      {
+         "carrier" : null,
+         "deliveryStatus" : "Processing",
+         "freight" : 0,
+         "gst" : 78.12,
+         "itemCount" : 44,
+         "lineItems" : [
+            {
+               "category" : "Sports Nutrition",
+               "lineTotal" : 336,
+               "name" : "ProFuel Whey Protein Vanilla 1kg",
+               "qty" : 12,
+               "sku" : "GV-SPT-0401",
+               "unitWholesale" : 28
+            },
+            {
+               "category" : "Sports Nutrition",
+               "lineTotal" : 142,
+               "name" : "ProFuel Creatine Monohydrate 300g",
+               "qty" : 10,
+               "sku" : "GV-SPT-0403",
+               "unitWholesale" : 14.2
+            },
+            {
+               "category" : "Sports Nutrition",
+               "lineTotal" : 168,
+               "name" : "ProFuel BCAA Electrolytes Berry 400g",
+               "qty" : 10,
+               "sku" : "GV-SPT-0404",
+               "unitWholesale" : 16.8
+            },
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 222,
+               "name" : "VitaWell Magnesium Glycinate 120 caps",
+               "qty" : 12,
+               "sku" : "GV-VIT-0101",
+               "unitWholesale" : 18.5
+            }
+         ],
+         "memberId" : "GV-1052",
+         "orderDate" : "2026-10-10",
+         "orderId" : "SO-24821",
+         "state" : "VIC",
+         "store" : "Go Vita Geelong",
+         "subtotalExGst" : 868,
+         "tier" : "Gold",
+         "tierDiscount" : 86.8,
+         "tierDiscountPct" : 10,
+         "totalIncGst" : 859.32,
+         "tracking" : null
+      },
+      {
+         "carrier" : "StarTrack",
+         "deliveryStatus" : "Delivered",
+         "freight" : 15,
+         "gst" : 28.15,
+         "itemCount" : 18,
+         "lineItems" : [
+            {
+               "category" : "Organic & Whole Foods",
+               "lineTotal" : 94.5,
+               "name" : "GoldenLand Organic Manuka Honey MGO 100+ 250g",
+               "qty" : 6,
+               "sku" : "GV-ORG-0305",
+               "unitWholesale" : 15.75
+            },
+            {
+               "category" : "Herbal & Naturopathic",
+               "lineTotal" : 97.2,
+               "name" : "HerbaVital Ashwagandha KSM-66 60 caps",
+               "qty" : 6,
+               "sku" : "GV-HRB-0201",
+               "unitWholesale" : 16.2
+            },
+            {
+               "category" : "Immune & Wellness",
+               "lineTotal" : 104.4,
+               "name" : "FloraBalance Probiotic 50 Billion 30 caps",
+               "qty" : 6,
+               "sku" : "GV-IMM-0703",
+               "unitWholesale" : 17.4
+            }
+         ],
+         "memberId" : "GV-1052",
+         "orderDate" : "2026-09-26",
+         "orderId" : "SO-24777",
+         "state" : "VIC",
+         "store" : "Go Vita Geelong",
+         "subtotalExGst" : 296.1,
+         "tier" : "Gold",
+         "tierDiscount" : 29.61,
+         "tierDiscountPct" : 10,
+         "totalIncGst" : 309.64,
+         "tracking" : "ST4452880AU"
+      },
+      {
+         "carrier" : "StarTrack",
+         "deliveryStatus" : "In transit",
+         "freight" : 0,
+         "gst" : 54.65,
+         "itemCount" : 36,
+         "lineItems" : [
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 222,
+               "name" : "VitaWell Magnesium Glycinate 120 caps",
+               "qty" : 12,
+               "sku" : "GV-VIT-0101",
+               "unitWholesale" : 18.5
+            },
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 154.8,
+               "name" : "VitaWell Vitamin D3 1000IU 250 caps",
+               "qty" : 12,
+               "sku" : "GV-VIT-0102",
+               "unitWholesale" : 12.9
+            },
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 126,
+               "name" : "OmegaPure Wild Fish Oil 1500mg 200 caps",
+               "qty" : 6,
+               "sku" : "GV-VIT-0105",
+               "unitWholesale" : 21
+            },
+            {
+               "category" : "Immune & Wellness",
+               "lineTotal" : 104.4,
+               "name" : "FloraBalance Probiotic 50 Billion 30 caps",
+               "qty" : 6,
+               "sku" : "GV-IMM-0703",
+               "unitWholesale" : 17.4
+            }
+         ],
+         "memberId" : "GV-1066",
+         "orderDate" : "2026-10-09",
+         "orderId" : "SO-24818",
+         "state" : "NSW",
+         "store" : "Go Vita Chatswood",
+         "subtotalExGst" : 607.2,
+         "tier" : "Gold",
+         "tierDiscount" : 60.72,
+         "tierDiscountPct" : 10,
+         "totalIncGst" : 601.13,
+         "tracking" : "ST4470551AU"
+      },
+      {
+         "carrier" : "StarTrack",
+         "deliveryStatus" : "Delivered",
+         "freight" : 15,
+         "gst" : 26.11,
+         "itemCount" : 14,
+         "lineItems" : [
+            {
+               "category" : "Sports Nutrition",
+               "lineTotal" : 183,
+               "name" : "ProFuel Plant Protein Chocolate 1kg",
+               "qty" : 6,
+               "sku" : "GV-SPT-0402",
+               "unitWholesale" : 30.5
+            },
+            {
+               "category" : "Weight Management",
+               "lineTotal" : 90.4,
+               "name" : "SlimLine Green Tea Metabolism 90 caps",
+               "qty" : 8,
+               "sku" : "GV-WGT-0501",
+               "unitWholesale" : 11.3
+            }
+         ],
+         "memberId" : "GV-1066",
+         "orderDate" : "2026-09-16",
+         "orderId" : "SO-24733",
+         "state" : "NSW",
+         "store" : "Go Vita Chatswood",
+         "subtotalExGst" : 273.4,
+         "tier" : "Gold",
+         "tierDiscount" : 27.34,
+         "tierDiscountPct" : 10,
+         "totalIncGst" : 287.17,
+         "tracking" : "ST4442009AU"
+      },
+      {
+         "carrier" : "Aramex",
+         "deliveryStatus" : "Dispatched",
+         "freight" : 15,
+         "gst" : 29.36,
+         "itemCount" : 36,
+         "lineItems" : [
+            {
+               "category" : "Natural Beauty & Skincare",
+               "lineTotal" : 106.8,
+               "name" : "NaturaGlow Rosehip Oil 30ml",
+               "qty" : 12,
+               "sku" : "GV-BTY-0601",
+               "unitWholesale" : 8.9
+            },
+            {
+               "category" : "Natural Beauty & Skincare",
+               "lineTotal" : 124.8,
+               "name" : "NaturaGlow Magnesium Body Butter 200g",
+               "qty" : 12,
+               "sku" : "GV-BTY-0602",
+               "unitWholesale" : 10.4
+            },
+            {
+               "category" : "Organic & Whole Foods",
+               "lineTotal" : 64.8,
+               "name" : "NutriSeed Organic Chia Seeds 500g",
+               "qty" : 12,
+               "sku" : "GV-ORG-0303",
+               "unitWholesale" : 5.4
+            }
+         ],
+         "memberId" : "GV-1078",
+         "orderDate" : "2026-10-08",
+         "orderId" : "SO-24814",
+         "state" : "QLD",
+         "store" : "Go Vita Noosa",
+         "subtotalExGst" : 296.4,
+         "tier" : "Silver",
+         "tierDiscount" : 17.78,
+         "tierDiscountPct" : 6,
+         "totalIncGst" : 322.98,
+         "tracking" : "AMX71255610"
+      },
+      {
+         "carrier" : "Aramex",
+         "deliveryStatus" : "Delivered",
+         "freight" : 15,
+         "gst" : 15.71,
+         "itemCount" : 16,
+         "lineItems" : [
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 67.2,
+               "name" : "VitaWell Zinc Picolinate 25mg 100 caps",
+               "qty" : 8,
+               "sku" : "GV-VIT-0104",
+               "unitWholesale" : 8.4
+            },
+            {
+               "category" : "Herbal & Naturopathic",
+               "lineTotal" : 84,
+               "name" : "SleepEase Valerian & Passionflower 60 tabs",
+               "qty" : 8,
+               "sku" : "GV-HRB-0204",
+               "unitWholesale" : 10.5
+            }
+         ],
+         "memberId" : "GV-1078",
+         "orderDate" : "2026-09-11",
+         "orderId" : "SO-24699",
+         "state" : "QLD",
+         "store" : "Go Vita Noosa",
+         "subtotalExGst" : 151.2,
+         "tier" : "Silver",
+         "tierDiscount" : 9.07,
+         "tierDiscountPct" : 6,
+         "totalIncGst" : 172.84,
+         "tracking" : "AMX71198702"
+      },
+      {
+         "carrier" : null,
+         "deliveryStatus" : "Back-order",
+         "freight" : 0,
+         "gst" : 50.22,
+         "itemCount" : 32,
+         "lineItems" : [
+            {
+               "category" : "Sports Nutrition",
+               "lineTotal" : 336,
+               "name" : "ProFuel BCAA Electrolytes Berry 400g",
+               "qty" : 20,
+               "sku" : "GV-SPT-0404",
+               "unitWholesale" : 16.8
+            },
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 222,
+               "name" : "VitaWell Magnesium Glycinate 120 caps",
+               "qty" : 12,
+               "sku" : "GV-VIT-0101",
+               "unitWholesale" : 18.5
+            }
+         ],
+         "memberId" : "GV-1085",
+         "orderDate" : "2026-10-10",
+         "orderId" : "SO-24820",
+         "state" : "VIC",
+         "store" : "Go Vita Ballarat",
+         "subtotalExGst" : 558,
+         "tier" : "Gold",
+         "tierDiscount" : 55.8,
+         "tierDiscountPct" : 10,
+         "totalIncGst" : 552.42,
+         "tracking" : null
+      },
+      {
+         "carrier" : "StarTrack",
+         "deliveryStatus" : "Delivered",
+         "freight" : 15,
+         "gst" : 26.11,
+         "itemCount" : 46,
+         "lineItems" : [
+            {
+               "category" : "Organic & Whole Foods",
+               "lineTotal" : 100.8,
+               "name" : "PureHarvest Organic Rolled Oats 1kg",
+               "qty" : 24,
+               "sku" : "GV-ORG-0301",
+               "unitWholesale" : 4.2
+            },
+            {
+               "category" : "Organic & Whole Foods",
+               "lineTotal" : 91,
+               "name" : "NutriSeed Raw Almonds 750g",
+               "qty" : 10,
+               "sku" : "GV-ORG-0304",
+               "unitWholesale" : 9.1
+            },
+            {
+               "category" : "Organic & Whole Foods",
+               "lineTotal" : 81.6,
+               "name" : "PureHarvest Organic Coconut Oil 500ml",
+               "qty" : 12,
+               "sku" : "GV-ORG-0302",
+               "unitWholesale" : 6.8
+            }
+         ],
+         "memberId" : "GV-1085",
+         "orderDate" : "2026-09-25",
+         "orderId" : "SO-24766",
+         "state" : "VIC",
+         "store" : "Go Vita Ballarat",
+         "subtotalExGst" : 273.4,
+         "tier" : "Gold",
+         "tierDiscount" : 27.34,
+         "tierDiscountPct" : 10,
+         "totalIncGst" : 287.17,
+         "tracking" : "ST4450223AU"
+      },
+      {
+         "carrier" : "TNT",
+         "deliveryStatus" : "In transit",
+         "freight" : 0,
+         "gst" : 30.96,
+         "itemCount" : 30,
+         "lineItems" : [
+            {
+               "category" : "Immune & Wellness",
+               "lineTotal" : 96,
+               "name" : "ImmuGuard Elderberry & Zinc Lozenges 60s",
+               "qty" : 10,
+               "sku" : "GV-IMM-0701",
+               "unitWholesale" : 9.6
+            },
+            {
+               "category" : "Immune & Wellness",
+               "lineTotal" : 145.2,
+               "name" : "ImmuGuard Olive Leaf Extract 50ml",
+               "qty" : 12,
+               "sku" : "GV-IMM-0702",
+               "unitWholesale" : 12.1
+            },
+            {
+               "category" : "Vitamins & Supplements",
+               "lineTotal" : 78,
+               "name" : "VitaWell High-Strength Vitamin C 1000mg 90 tabs",
+               "qty" : 8,
+               "sku" : "GV-VIT-0103",
+               "unitWholesale" : 9.75
+            }
+         ],
+         "memberId" : "GV-1090",
+         "orderDate" : "2026-10-07",
+         "orderId" : "SO-24808",
+         "state" : "NT",
+         "store" : "Go Vita Darwin",
+         "subtotalExGst" : 319.2,
+         "tier" : "Bronze",
+         "tierDiscount" : 9.58,
+         "tierDiscountPct" : 3,
+         "totalIncGst" : 340.58,
+         "tracking" : "TNT90549870"
+      }
+   ]
 }
