@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "description": "Go Vita wholesale product catalogue — stock lines available to member stores from the Go Vita central distribution centre (Sydney). Fictional demo data.",
+    "currency": "AUD",
+    "pricing_basis": "wholesale (member cost) ex-GST; RRP is suggested retail inc-GST",
+    "owner": "Bob (Member Accounts)",
+    "generated_for": "pipes-demo-govita",
+    "categories": [
+      "Vitamins & Supplements",
+      "Herbal & Naturopathic",
+      "Organic & Whole Foods",
+      "Sports Nutrition",
+      "Weight Management",
+      "Natural Beauty & Skincare",
+      "Immune & Wellness"
+    ]
+  },
+  "products": [
+    { "sku": "GV-VIT-0101", "name": "VitaWell Magnesium Glycinate 120 caps", "brand": "VitaWell", "category": "Vitamins & Supplements", "packSize": "120 capsules", "unitsPerCarton": 6, "wholesale": 18.50, "rrp": 34.95, "status": "In stock" },
+    { "sku": "GV-VIT-0102", "name": "VitaWell Vitamin D3 1000IU 250 caps", "brand": "VitaWell", "category": "Vitamins & Supplements", "packSize": "250 capsules", "unitsPerCarton": 6, "wholesale": 12.90, "rrp": 24.95, "status": "In stock" },
+    { "sku": "GV-VIT-0103", "name": "VitaWell High-Strength Vitamin C 1000mg 90 tabs", "brand": "VitaWell", "category": "Vitamins & Supplements", "packSize": "90 tablets", "unitsPerCarton": 8, "wholesale": 9.75, "rrp": 18.95, "status": "In stock" },
+    { "sku": "GV-VIT-0104", "name": "VitaWell Zinc Picolinate 25mg 100 caps", "brand": "VitaWell", "category": "Vitamins & Supplements", "packSize": "100 capsules", "unitsPerCarton": 8, "wholesale": 8.40, "rrp": 16.50, "status": "In stock" },
+    { "sku": "GV-VIT-0105", "name": "OmegaPure Wild Fish Oil 1500mg 200 caps", "brand": "OmegaPure", "category": "Vitamins & Supplements", "packSize": "200 capsules", "unitsPerCarton": 6, "wholesale": 21.00, "rrp": 39.95, "status": "In stock" },
+
+    { "sku": "GV-HRB-0201", "name": "HerbaVital Ashwagandha KSM-66 60 caps", "brand": "HerbaVital", "category": "Herbal & Naturopathic", "packSize": "60 capsules", "unitsPerCarton": 6, "wholesale": 16.20, "rrp": 32.95, "status": "In stock" },
+    { "sku": "GV-HRB-0202", "name": "HerbaVital Turmeric + BioPerine 60 tabs", "brand": "HerbaVital", "category": "Herbal & Naturopathic", "packSize": "60 tablets", "unitsPerCarton": 6, "wholesale": 13.60, "rrp": 27.95, "status": "In stock" },
+    { "sku": "GV-HRB-0203", "name": "HerbaVital Milk Thistle 35000mg 60 caps", "brand": "HerbaVital", "category": "Herbal & Naturopathic", "packSize": "60 capsules", "unitsPerCarton": 6, "wholesale": 11.90, "rrp": 23.95, "status": "Low stock" },
+    { "sku": "GV-HRB-0204", "name": "SleepEase Valerian & Passionflower 60 tabs", "brand": "SleepEase", "category": "Herbal & Naturopathic", "packSize": "60 tablets", "unitsPerCarton": 8, "wholesale": 10.50, "rrp": 21.95, "status": "In stock" },
+
+    { "sku": "GV-ORG-0301", "name": "PureHarvest Organic Rolled Oats 1kg", "brand": "PureHarvest", "category": "Organic & Whole Foods", "packSize": "1kg", "unitsPerCarton": 12, "wholesale": 4.20, "rrp": 7.95, "status": "In stock" },
+    { "sku": "GV-ORG-0302", "name": "PureHarvest Organic Coconut Oil 500ml", "brand": "PureHarvest", "category": "Organic & Whole Foods", "packSize": "500ml", "unitsPerCarton": 12, "wholesale": 6.80, "rrp": 13.50, "status": "In stock" },
+    { "sku": "GV-ORG-0303", "name": "NutriSeed Organic Chia Seeds 500g", "brand": "NutriSeed", "category": "Organic & Whole Foods", "packSize": "500g", "unitsPerCarton": 12, "wholesale": 5.40, "rrp": 10.95, "status": "In stock" },
+    { "sku": "GV-ORG-0304", "name": "NutriSeed Raw Almonds 750g", "brand": "NutriSeed", "category": "Organic & Whole Foods", "packSize": "750g", "unitsPerCarton": 10, "wholesale": 9.10, "rrp": 17.95, "status": "In stock" },
+    { "sku": "GV-ORG-0305", "name": "GoldenLand Organic Manuka Honey MGO 100+ 250g", "brand": "GoldenLand", "category": "Organic & Whole Foods", "packSize": "250g", "unitsPerCarton": 6, "wholesale": 15.75, "rrp": 29.95, "status": "Low stock" },
+
+    { "sku": "GV-SPT-0401", "name": "ProFuel Whey Protein Vanilla 1kg", "brand": "ProFuel", "category": "Sports Nutrition", "packSize": "1kg", "unitsPerCarton": 6, "wholesale": 28.00, "rrp": 54.95, "status": "In stock" },
+    { "sku": "GV-SPT-0402", "name": "ProFuel Plant Protein Chocolate 1kg", "brand": "ProFuel", "category": "Sports Nutrition", "packSize": "1kg", "unitsPerCarton": 6, "wholesale": 30.50, "rrp": 59.95, "status": "In stock" },
+    { "sku": "GV-SPT-0403", "name": "ProFuel Creatine Monohydrate 300g", "brand": "ProFuel", "category": "Sports Nutrition", "packSize": "300g", "unitsPerCarton": 10, "wholesale": 14.20, "rrp": 29.95, "status": "In stock" },
+    { "sku": "GV-SPT-0404", "name": "ProFuel BCAA Electrolytes Berry 400g", "brand": "ProFuel", "category": "Sports Nutrition", "packSize": "400g", "unitsPerCarton": 10, "wholesale": 16.80, "rrp": 34.95, "status": "Back-order" },
+
+    { "sku": "GV-WGT-0501", "name": "SlimLine Green Tea Metabolism 90 caps", "brand": "SlimLine", "category": "Weight Management", "packSize": "90 capsules", "unitsPerCarton": 8, "wholesale": 11.30, "rrp": 24.95, "status": "In stock" },
+    { "sku": "GV-WGT-0502", "name": "SlimLine Meal Replacement Shake Vanilla 750g", "brand": "SlimLine", "category": "Weight Management", "packSize": "750g", "unitsPerCarton": 6, "wholesale": 19.90, "rrp": 39.95, "status": "In stock" },
+
+    { "sku": "GV-BTY-0601", "name": "NaturaGlow Rosehip Oil 30ml", "brand": "NaturaGlow", "category": "Natural Beauty & Skincare", "packSize": "30ml", "unitsPerCarton": 12, "wholesale": 8.90, "rrp": 18.95, "status": "In stock" },
+    { "sku": "GV-BTY-0602", "name": "NaturaGlow Magnesium Body Butter 200g", "brand": "NaturaGlow", "category": "Natural Beauty & Skincare", "packSize": "200g", "unitsPerCarton": 12, "wholesale": 10.40, "rrp": 21.95, "status": "In stock" },
+    { "sku": "GV-BTY-0603", "name": "PureClean Natural Deodorant Citrus 60g", "brand": "PureClean", "category": "Natural Beauty & Skincare", "packSize": "60g", "unitsPerCarton": 16, "wholesale": 4.95, "rrp": 11.95, "status": "In stock" },
+
+    { "sku": "GV-IMM-0701", "name": "ImmuGuard Elderberry & Zinc Lozenges 60s", "brand": "ImmuGuard", "category": "Immune & Wellness", "packSize": "60 lozenges", "unitsPerCarton": 10, "wholesale": 9.60, "rrp": 19.95, "status": "In stock" },
+    { "sku": "GV-IMM-0702", "name": "ImmuGuard Olive Leaf Extract 50ml", "brand": "ImmuGuard", "category": "Immune & Wellness", "packSize": "50ml", "unitsPerCarton": 12, "wholesale": 12.10, "rrp": 24.95, "status": "In stock" },
+    { "sku": "GV-IMM-0703", "name": "FloraBalance Probiotic 50 Billion 30 caps", "brand": "FloraBalance", "category": "Immune & Wellness", "packSize": "30 capsules", "unitsPerCarton": 6, "wholesale": 17.40, "rrp": 36.95, "status": "Low stock" }
+  ]
+}

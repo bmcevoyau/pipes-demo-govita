@@ -1,18 +1,181 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Accounts — Bob | Go Vita</title><link rel="stylesheet" href="style.css"></head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accounts — Bob | Go Vita</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<header class="site-header"><nav class="nav">
-<a class="brand" href="index.html"><span class="leaf">🌿</span> Go Vita Member Services</a>
-<a class="navlink" href="index.html">Home</a>
-<a class="navlink" href="support.html">Member Support</a>
-<a class="navlink active" href="accounts.html">Accounts</a>
-<a class="navlink" href="marketing.html">Marketing</a>
-</nav></header>
-<main class="wrap"><span class="eyebrow">Member Accounts · Bob</span>
-<h1>Accounts section</h1>
-<p class="lede">Bob is preparing the member accounts dataset and this page (orders, quantities, pricing, delivery status). Check back shortly.</p>
-</main>
-<footer class="site-footer"><div class="wrap">Go Vita Member Services — placeholder, owned by Bob.</div></footer>
-</body></html>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="leaf">🌿</span> Go Vita Member Services</a>
+      <a class="navlink" href="index.html">Home</a>
+      <a class="navlink" href="support.html">Member Support</a>
+      <a class="navlink active" href="accounts.html">Accounts</a>
+      <a class="navlink" href="marketing.html">Marketing</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Member Accounts · Bob</span>
+      <h1>Member Accounts desk</h1>
+      <p class="tag">Orders, quantities, wholesale pricing and delivery status for every Go Vita member store.</p>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <p class="lede">
+      This is Bob's desk. When Alice routes an accounts enquiry — "where's my order?", "what did we pay for
+      the whey protein?", "how much have we spent this quarter?" — the answer comes from the data below:
+      the member account directory, their stock orders with the distribution centre, and the current
+      wholesale price list.
+    </p>
+
+    <h2>Accounts at a glance</h2>
+    <div class="grid cols-3">
+      <div class="card"><div class="kpi">10</div><div class="kpi-label">Member accounts</div></div>
+      <div class="card"><div class="kpi">19</div><div class="kpi-label">Orders on file</div></div>
+      <div class="card"><div class="kpi">9</div><div class="kpi-label">Open (not yet delivered)</div></div>
+      <div class="card"><div class="kpi">6</div><div class="kpi-label">In transit / dispatched</div></div>
+      <div class="card"><div class="kpi">$7,533.46</div><div class="kpi-label">Order value (inc GST)</div></div>
+      <div class="card"><div class="kpi">26</div><div class="kpi-label">Catalogue lines</div></div>
+    </div>
+
+    <h2>Member account directory</h2>
+    <p>Each member is an independently owned Go Vita store. Account value is the total of orders on file (inc GST).</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Member ID</th><th>Store</th><th>State</th><th>Region</th><th>Tier</th><th style="text-align:center">Orders</th><th>Last order</th><th style="text-align:right">Account value</th></tr></thead>
+        <tbody>
+        <tr><td><code class="inline">GV-1007</code></td><td>Go Vita Bondi Junction</td><td>NSW</td><td>Sydney Metro</td><td><span class="badge gold">Gold</span></td><td style="text-align:center">3</td><td>2026-10-09</td><td style="text-align:right">$1,601.23</td></tr>
+        <tr><td><code class="inline">GV-1012</code></td><td>Go Vita Fremantle</td><td>WA</td><td>Perth Metro</td><td><span class="badge silver">Silver</span></td><td style="text-align:center">2</td><td>2026-10-10</td><td style="text-align:right">$570.28</td></tr>
+        <tr><td><code class="inline">GV-1023</code></td><td>Go Vita Toowoomba</td><td>QLD</td><td>Regional QLD</td><td><span class="badge gold">Gold</span></td><td style="text-align:center">2</td><td>2026-10-08</td><td style="text-align:right">$797.61</td></tr>
+        <tr><td><code class="inline">GV-1031</code></td><td>Go Vita Glenelg</td><td>SA</td><td>Adelaide Metro</td><td><span class="badge silver">Silver</span></td><td style="text-align:center">2</td><td>2026-10-09</td><td style="text-align:right">$571.31</td></tr>
+        <tr><td><code class="inline">GV-1044</code></td><td>Go Vita Launceston</td><td>TAS</td><td>Regional TAS</td><td><span class="badge bronze">Bronze</span></td><td style="text-align:center">1</td><td>2026-10-07</td><td style="text-align:right">$259.78</td></tr>
+        <tr><td><code class="inline">GV-1052</code></td><td>Go Vita Geelong</td><td>VIC</td><td>Regional VIC</td><td><span class="badge gold">Gold</span></td><td style="text-align:center">2</td><td>2026-10-10</td><td style="text-align:right">$1,168.96</td></tr>
+        <tr><td><code class="inline">GV-1066</code></td><td>Go Vita Chatswood</td><td>NSW</td><td>Sydney Metro</td><td><span class="badge gold">Gold</span></td><td style="text-align:center">2</td><td>2026-10-09</td><td style="text-align:right">$888.30</td></tr>
+        <tr><td><code class="inline">GV-1078</code></td><td>Go Vita Noosa</td><td>QLD</td><td>Sunshine Coast</td><td><span class="badge silver">Silver</span></td><td style="text-align:center">2</td><td>2026-10-08</td><td style="text-align:right">$495.82</td></tr>
+        <tr><td><code class="inline">GV-1085</code></td><td>Go Vita Ballarat</td><td>VIC</td><td>Regional VIC</td><td><span class="badge gold">Gold</span></td><td style="text-align:center">2</td><td>2026-10-10</td><td style="text-align:right">$839.59</td></tr>
+        <tr><td><code class="inline">GV-1090</code></td><td>Go Vita Darwin</td><td>NT</td><td>Regional NT</td><td><span class="badge bronze">Bronze</span></td><td style="text-align:center">1</td><td>2026-10-07</td><td style="text-align:right">$340.58</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Recent stock orders</h2>
+    <p>Orders placed by member stores with the Go Vita central distribution centre (Sydney).</p>
+    <div class="pill-row">
+      <span class="badge green">Delivered</span>
+      <span class="badge amber">In transit / Dispatched</span>
+      <span class="badge grey">Processing / Back-order</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Order</th><th>Store</th><th>Date</th><th style="text-align:center">Items</th><th style="text-align:right">Total (inc GST)</th><th>Status</th><th>Tracking</th></tr></thead>
+        <tbody>
+        <tr><td><code class="inline">SO-24822</code></td><td>Go Vita Fremantle<br><span style="color:var(--muted);font-size:.85em">GV-1012</span></td><td>2026-10-10</td><td style="text-align:center">48</td><td style="text-align:right">$298.17</td><td><span class="badge grey">Processing</span></td><td><span class="badge grey">—</span></td></tr>
+        <tr><td><code class="inline">SO-24821</code></td><td>Go Vita Geelong<br><span style="color:var(--muted);font-size:.85em">GV-1052</span></td><td>2026-10-10</td><td style="text-align:center">44</td><td style="text-align:right">$859.32</td><td><span class="badge grey">Processing</span></td><td><span class="badge grey">—</span></td></tr>
+        <tr><td><code class="inline">SO-24820</code></td><td>Go Vita Ballarat<br><span style="color:var(--muted);font-size:.85em">GV-1085</span></td><td>2026-10-10</td><td style="text-align:center">32</td><td style="text-align:right">$552.42</td><td><span class="badge grey">Back-order</span></td><td><span class="badge grey">—</span></td></tr>
+        <tr><td><code class="inline">SO-24819</code></td><td>Go Vita Glenelg<br><span style="color:var(--muted);font-size:.85em">GV-1031</span></td><td>2026-10-09</td><td style="text-align:center">34</td><td style="text-align:right">$324.02</td><td><span class="badge amber">In transit</span></td><td><code class="inline">ST4470338AU</code></td></tr>
+        <tr><td><code class="inline">SO-24818</code></td><td>Go Vita Chatswood<br><span style="color:var(--muted);font-size:.85em">GV-1066</span></td><td>2026-10-09</td><td style="text-align:center">36</td><td style="text-align:right">$601.13</td><td><span class="badge amber">In transit</span></td><td><code class="inline">ST4470551AU</code></td></tr>
+        <tr><td><code class="inline">SO-24817</code></td><td>Go Vita Bondi Junction<br><span style="color:var(--muted);font-size:.85em">GV-1007</span></td><td>2026-10-09</td><td style="text-align:center">30</td><td style="text-align:right">$614.20</td><td><span class="badge amber">In transit</span></td><td><code class="inline">ST4471902AU</code></td></tr>
+        <tr><td><code class="inline">SO-24814</code></td><td>Go Vita Noosa<br><span style="color:var(--muted);font-size:.85em">GV-1078</span></td><td>2026-10-08</td><td style="text-align:center">36</td><td style="text-align:right">$322.98</td><td><span class="badge amber">Dispatched</span></td><td><code class="inline">AMX71255610</code></td></tr>
+        <tr><td><code class="inline">SO-24810</code></td><td>Go Vita Toowoomba<br><span style="color:var(--muted);font-size:.85em">GV-1023</span></td><td>2026-10-08</td><td style="text-align:center">22</td><td style="text-align:right">$465.70</td><td><span class="badge amber">Dispatched</span></td><td><code class="inline">TNT90552117</code></td></tr>
+        <tr><td><code class="inline">SO-24808</code></td><td>Go Vita Darwin<br><span style="color:var(--muted);font-size:.85em">GV-1090</span></td><td>2026-10-07</td><td style="text-align:center">30</td><td style="text-align:right">$340.58</td><td><span class="badge amber">In transit</span></td><td><code class="inline">TNT90549870</code></td></tr>
+        <tr><td><code class="inline">SO-24805</code></td><td>Go Vita Launceston<br><span style="color:var(--muted);font-size:.85em">GV-1044</span></td><td>2026-10-07</td><td style="text-align:center">28</td><td style="text-align:right">$259.78</td><td><span class="badge green">Delivered</span></td><td><code class="inline">AP556712903</code></td></tr>
+        <tr><td><code class="inline">SO-24790</code></td><td>Go Vita Bondi Junction<br><span style="color:var(--muted);font-size:.85em">GV-1007</span></td><td>2026-09-28</td><td style="text-align:center">30</td><td style="text-align:right">$436.59</td><td><span class="badge green">Delivered</span></td><td><code class="inline">ST4458113AU</code></td></tr>
+        <tr><td><code class="inline">SO-24777</code></td><td>Go Vita Geelong<br><span style="color:var(--muted);font-size:.85em">GV-1052</span></td><td>2026-09-26</td><td style="text-align:center">18</td><td style="text-align:right">$309.64</td><td><span class="badge green">Delivered</span></td><td><code class="inline">ST4452880AU</code></td></tr>
+        <tr><td><code class="inline">SO-24766</code></td><td>Go Vita Ballarat<br><span style="color:var(--muted);font-size:.85em">GV-1085</span></td><td>2026-09-25</td><td style="text-align:center">46</td><td style="text-align:right">$287.17</td><td><span class="badge green">Delivered</span></td><td><code class="inline">ST4450223AU</code></td></tr>
+        <tr><td><code class="inline">SO-24760</code></td><td>Go Vita Glenelg<br><span style="color:var(--muted);font-size:.85em">GV-1031</span></td><td>2026-09-24</td><td style="text-align:center">20</td><td style="text-align:right">$247.29</td><td><span class="badge green">Delivered</span></td><td><code class="inline">ST4449107AU</code></td></tr>
+        <tr><td><code class="inline">SO-24744</code></td><td>Go Vita Fremantle<br><span style="color:var(--muted);font-size:.85em">GV-1012</span></td><td>2026-09-19</td><td style="text-align:center">26</td><td style="text-align:right">$272.11</td><td><span class="badge green">Delivered</span></td><td><code class="inline">AMX71220934</code></td></tr>
+        <tr><td><code class="inline">SO-24733</code></td><td>Go Vita Chatswood<br><span style="color:var(--muted);font-size:.85em">GV-1066</span></td><td>2026-09-16</td><td style="text-align:center">14</td><td style="text-align:right">$287.17</td><td><span class="badge green">Delivered</span></td><td><code class="inline">ST4442009AU</code></td></tr>
+        <tr><td><code class="inline">SO-24701</code></td><td>Go Vita Toowoomba<br><span style="color:var(--muted);font-size:.85em">GV-1023</span></td><td>2026-09-12</td><td style="text-align:center">18</td><td style="text-align:right">$331.91</td><td><span class="badge green">Delivered</span></td><td><code class="inline">TNT90488044</code></td></tr>
+        <tr><td><code class="inline">SO-24699</code></td><td>Go Vita Noosa<br><span style="color:var(--muted);font-size:.85em">GV-1078</span></td><td>2026-09-11</td><td style="text-align:center">16</td><td style="text-align:right">$172.84</td><td><span class="badge green">Delivered</span></td><td><code class="inline">AMX71198702</code></td></tr>
+        <tr><td><code class="inline">SO-24655</code></td><td>Go Vita Bondi Junction<br><span style="color:var(--muted);font-size:.85em">GV-1007</span></td><td>2026-09-05</td><td style="text-align:center">30</td><td style="text-align:right">$550.44</td><td><span class="badge green">Delivered</span></td><td><code class="inline">ST4399821AU</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Order detail — <code class="inline">SO-24817</code></h2>
+    <p>Example of a full order breakdown as the member would see it. Store: <strong>Go Vita Bondi Junction</strong>
+       (<code class="inline">GV-1007</code>) · Ordered 2026-10-09 ·
+       Status: <span class="badge amber">In transit</span> · Carrier: StarTrack
+       (<code class="inline">ST4471902AU</code>).</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>SKU</th><th>Product</th><th style="text-align:center">Qty</th><th style="text-align:right">Unit (wholesale)</th><th style="text-align:right">Line total</th></tr></thead>
+        <tbody>
+        <tr><td><code class="inline">GV-VIT-0101</code></td><td>VitaWell Magnesium Glycinate 120 caps</td><td style="text-align:center">12</td><td style="text-align:right">$18.50</td><td style="text-align:right">$222.00</td></tr>
+        <tr><td><code class="inline">GV-VIT-0105</code></td><td>OmegaPure Wild Fish Oil 1500mg 200 caps</td><td style="text-align:center">6</td><td style="text-align:right">$21.00</td><td style="text-align:right">$126.00</td></tr>
+        <tr><td><code class="inline">GV-IMM-0703</code></td><td>FloraBalance Probiotic 50 Billion 30 caps</td><td style="text-align:center">6</td><td style="text-align:right">$17.40</td><td style="text-align:right">$104.40</td></tr>
+        <tr><td><code class="inline">GV-SPT-0401</code></td><td>ProFuel Whey Protein Vanilla 1kg</td><td style="text-align:center">6</td><td style="text-align:right">$28.00</td><td style="text-align:right">$168.00</td></tr>
+<tr><td colspan="4" style="text-align:right;font-weight:700">Subtotal (ex-GST)</td><td style="text-align:right">$620.40</td></tr><tr><td colspan="4" style="text-align:right">Gold tier discount (10%)</td><td style="text-align:right">&minus;$62.04</td></tr><tr><td colspan="4" style="text-align:right">Freight</td><td style="text-align:right">Free</td></tr><tr><td colspan="4" style="text-align:right">GST (10%)</td><td style="text-align:right">$55.84</td></tr><tr><td colspan="4" style="text-align:right;font-weight:800;color:var(--gv-green-dark)">Total (inc GST)</td><td style="text-align:right;font-weight:800">$614.20</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Member tier benefits</h2>
+    <p>Wholesale pricing is discounted by member tier, applied to the order subtotal before freight and GST.</p>
+    <div class="grid cols-3">
+      <div class="card"><span class="badge gold">Gold</span><div class="kpi" style="margin-top:10px">10%</div><div class="kpi-label">off wholesale</div><p class="who">High-volume stores · free freight on $300+ orders.</p></div>
+      <div class="card"><span class="badge silver">Silver</span><div class="kpi" style="margin-top:10px">6%</div><div class="kpi-label">off wholesale</div><p class="who">Established stores · free freight on $300+ orders.</p></div>
+      <div class="card"><span class="badge bronze">Bronze</span><div class="kpi" style="margin-top:10px">3%</div><div class="kpi-label">off wholesale</div><p class="who">Newer members · free freight on $300+ orders.</p></div>
+    </div>
+    <div class="note" style="margin-top:16px"><strong>Freight:</strong> Free on orders of $300+ (net of discount); otherwise a flat $15.00. All orders attract 10% GST.</div>
+
+    <h2>Wholesale price list</h2>
+    <p>Current catalogue available to member stores from the distribution centre. Wholesale is member cost (ex-GST); RRP is suggested retail (inc-GST).</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>SKU</th><th>Product</th><th>Category</th><th>Pack</th><th style="text-align:right">Wholesale</th><th style="text-align:right">RRP</th><th>Availability</th></tr></thead>
+        <tbody>
+        <tr><td><code class="inline">GV-VIT-0101</code></td><td>VitaWell Magnesium Glycinate 120 caps</td><td>Vitamins &amp; Supplements</td><td>120 capsules</td><td style="text-align:right">$18.50</td><td style="text-align:right">$34.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-VIT-0102</code></td><td>VitaWell Vitamin D3 1000IU 250 caps</td><td>Vitamins &amp; Supplements</td><td>250 capsules</td><td style="text-align:right">$12.90</td><td style="text-align:right">$24.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-VIT-0103</code></td><td>VitaWell High-Strength Vitamin C 1000mg 90 tabs</td><td>Vitamins &amp; Supplements</td><td>90 tablets</td><td style="text-align:right">$9.75</td><td style="text-align:right">$18.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-VIT-0104</code></td><td>VitaWell Zinc Picolinate 25mg 100 caps</td><td>Vitamins &amp; Supplements</td><td>100 capsules</td><td style="text-align:right">$8.40</td><td style="text-align:right">$16.50</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-VIT-0105</code></td><td>OmegaPure Wild Fish Oil 1500mg 200 caps</td><td>Vitamins &amp; Supplements</td><td>200 capsules</td><td style="text-align:right">$21.00</td><td style="text-align:right">$39.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-HRB-0201</code></td><td>HerbaVital Ashwagandha KSM-66 60 caps</td><td>Herbal &amp; Naturopathic</td><td>60 capsules</td><td style="text-align:right">$16.20</td><td style="text-align:right">$32.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-HRB-0202</code></td><td>HerbaVital Turmeric + BioPerine 60 tabs</td><td>Herbal &amp; Naturopathic</td><td>60 tablets</td><td style="text-align:right">$13.60</td><td style="text-align:right">$27.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-HRB-0203</code></td><td>HerbaVital Milk Thistle 35000mg 60 caps</td><td>Herbal &amp; Naturopathic</td><td>60 capsules</td><td style="text-align:right">$11.90</td><td style="text-align:right">$23.95</td><td><span class="badge amber">Low stock</span></td></tr>
+        <tr><td><code class="inline">GV-HRB-0204</code></td><td>SleepEase Valerian &amp; Passionflower 60 tabs</td><td>Herbal &amp; Naturopathic</td><td>60 tablets</td><td style="text-align:right">$10.50</td><td style="text-align:right">$21.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-ORG-0301</code></td><td>PureHarvest Organic Rolled Oats 1kg</td><td>Organic &amp; Whole Foods</td><td>1kg</td><td style="text-align:right">$4.20</td><td style="text-align:right">$7.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-ORG-0302</code></td><td>PureHarvest Organic Coconut Oil 500ml</td><td>Organic &amp; Whole Foods</td><td>500ml</td><td style="text-align:right">$6.80</td><td style="text-align:right">$13.50</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-ORG-0303</code></td><td>NutriSeed Organic Chia Seeds 500g</td><td>Organic &amp; Whole Foods</td><td>500g</td><td style="text-align:right">$5.40</td><td style="text-align:right">$10.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-ORG-0304</code></td><td>NutriSeed Raw Almonds 750g</td><td>Organic &amp; Whole Foods</td><td>750g</td><td style="text-align:right">$9.10</td><td style="text-align:right">$17.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-ORG-0305</code></td><td>GoldenLand Organic Manuka Honey MGO 100+ 250g</td><td>Organic &amp; Whole Foods</td><td>250g</td><td style="text-align:right">$15.75</td><td style="text-align:right">$29.95</td><td><span class="badge amber">Low stock</span></td></tr>
+        <tr><td><code class="inline">GV-SPT-0401</code></td><td>ProFuel Whey Protein Vanilla 1kg</td><td>Sports Nutrition</td><td>1kg</td><td style="text-align:right">$28.00</td><td style="text-align:right">$54.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-SPT-0402</code></td><td>ProFuel Plant Protein Chocolate 1kg</td><td>Sports Nutrition</td><td>1kg</td><td style="text-align:right">$30.50</td><td style="text-align:right">$59.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-SPT-0403</code></td><td>ProFuel Creatine Monohydrate 300g</td><td>Sports Nutrition</td><td>300g</td><td style="text-align:right">$14.20</td><td style="text-align:right">$29.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-SPT-0404</code></td><td>ProFuel BCAA Electrolytes Berry 400g</td><td>Sports Nutrition</td><td>400g</td><td style="text-align:right">$16.80</td><td style="text-align:right">$34.95</td><td><span class="badge grey">Back-order</span></td></tr>
+        <tr><td><code class="inline">GV-WGT-0501</code></td><td>SlimLine Green Tea Metabolism 90 caps</td><td>Weight Management</td><td>90 capsules</td><td style="text-align:right">$11.30</td><td style="text-align:right">$24.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-WGT-0502</code></td><td>SlimLine Meal Replacement Shake Vanilla 750g</td><td>Weight Management</td><td>750g</td><td style="text-align:right">$19.90</td><td style="text-align:right">$39.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-BTY-0601</code></td><td>NaturaGlow Rosehip Oil 30ml</td><td>Natural Beauty &amp; Skincare</td><td>30ml</td><td style="text-align:right">$8.90</td><td style="text-align:right">$18.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-BTY-0602</code></td><td>NaturaGlow Magnesium Body Butter 200g</td><td>Natural Beauty &amp; Skincare</td><td>200g</td><td style="text-align:right">$10.40</td><td style="text-align:right">$21.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-BTY-0603</code></td><td>PureClean Natural Deodorant Citrus 60g</td><td>Natural Beauty &amp; Skincare</td><td>60g</td><td style="text-align:right">$4.95</td><td style="text-align:right">$11.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-IMM-0701</code></td><td>ImmuGuard Elderberry &amp; Zinc Lozenges 60s</td><td>Immune &amp; Wellness</td><td>60 lozenges</td><td style="text-align:right">$9.60</td><td style="text-align:right">$19.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-IMM-0702</code></td><td>ImmuGuard Olive Leaf Extract 50ml</td><td>Immune &amp; Wellness</td><td>50ml</td><td style="text-align:right">$12.10</td><td style="text-align:right">$24.95</td><td><span class="badge green">In stock</span></td></tr>
+        <tr><td><code class="inline">GV-IMM-0703</code></td><td>FloraBalance Probiotic 50 Billion 30 caps</td><td>Immune &amp; Wellness</td><td>30 capsules</td><td style="text-align:right">$17.40</td><td style="text-align:right">$36.95</td><td><span class="badge amber">Low stock</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>How an accounts enquiry is handled</h2>
+    <div class="steps">
+      <div class="step"><div class="s-body"><strong>Alice routes the enquiry.</strong> A member asks about an order, price or delivery; Alice confirms the member and passes it to Bob.</div></div>
+      <div class="step"><div class="s-body"><strong>Bob identifies the account.</strong> Match the member by store name or <code class="inline">GV-####</code> ID in the directory above.</div></div>
+      <div class="step"><div class="s-body"><strong>Bob pulls the facts.</strong> Order status &amp; tracking from the orders file; line pricing from the wholesale price list; tier discount from the account.</div></div>
+      <div class="step"><div class="s-body"><strong>Bob replies to Alice.</strong> A brief, factual answer — order ID, status, carrier/tracking, amounts — for Alice to relay to the member.</div></div>
+    </div>
+
+    <div class="note" style="margin-top:22px">
+      <strong>Demo note:</strong> All members, orders, pricing and delivery details on this page are fictional
+      and generated for demonstration only. Data source:
+      <code class="inline">data/members.json</code>, <code class="inline">data/orders.json</code>,
+      <code class="inline">data/products.json</code>.
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="wrap">Go Vita Member Services — Member Accounts (Bob). Fictional demo data.</div></footer>
+</body>
+</html>
