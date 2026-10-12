@@ -86,16 +86,22 @@ Victoria Park / Perth Metro **Mon 19 – Wed 21 Oct 2026** (5–7 business days)
 ## 5 · When something goes wrong — Alice → Bob (3 min)  ⭐ credibility moment
 > **Prompt:** *"One more thing — I'd like to stock your BCAA electrolytes too. Can you add 20 cartons?"*
 
-**Expected:** Bob raises **SO-24826** and is upfront: the **BCAA Electrolytes Berry (×20) is on
-back-order**, but the in-stock lines can go now. Options:
-- **(a) recommended:** ship the in-stock **8× ProFuel Plant Protein now** + BCAA to follow, **split
-  freight waived** (parts $268.80 + $347.42; same $599.72 total)
-- (b) hold & ship complete — BCAA restock ETA ~Mon 26 Oct
-- (c) substitute BCAA with in-stock ProFuel Creatine 300g ($14.20 ea Silver)
+**Expected:** Bob raises **SO-24826** — 20 cartons BCAA Electrolytes Berry (200 units), total
+**$3,474.24 inc GST** (Silver −6%, free freight) — and is upfront: the BCAA is a hot seller and is
+**currently out of stock**, so the whole order is on back-order and nothing can ship yet. Options:
+- (a) hold & ship complete when it lands — restock ETA ~Mon 26 Oct (free freight)
+- (b) substitute with in-stock ProFuel Creatine 300g ($14.20 ea Silver) — different product, only if it suits
+- **(c) recommended:** reserve & notify — priority-allocate the 200 units against the incoming batch,
+  auto-dispatch + alert the moment it arrives, so Tom is first in line
 
-Alice relays option (a) with reassurance.
+Alice relays honestly and recommends (c) (or (a) if he's happy to wait).
 **Why it lands** — *Board:* the hard case is handled honestly, not hidden — that's where trust is won.
-*Members:* proactive, no chasing, no worse off on freight.
+*Members:* proactive, no chasing, kept first in the queue.
+
+> **Note for presenters:** order *only* the BCAA to get this pure back-order. If you instead order a
+> mix of in-stock + out-of-stock items, you'll see the alternative "ship the in-stock part now, rest
+> to follow, freight waived" handling — both are good; pick whichever story you want. Alice answers
+> whatever you actually order, not a fixed script.
 
 ---
 
