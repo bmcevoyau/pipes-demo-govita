@@ -222,6 +222,28 @@
       "file": "assets/marketing/social-tile-immune-fremantle.svg",
       "description": "Store-personalised example: immune social tile branded for Go Vita Fremantle (Vitamin D3 · C · Zinc).",
       "updated": "2026-10-12"
+    },
+    {
+      "id": "poster-immune-arriving-soon-fremantle",
+      "title": "Immune Trio 'Arriving Soon' poster — Go Vita Fremantle",
+      "basedOn": "poster-winter-wellness-immune",
+      "memberId": "GV-1012",
+      "store": "Go Vita Fremantle",
+      "format": "SVG (vector, print-ready A4 portrait)",
+      "file": "assets/marketing/poster-immune-arriving-soon-fremantle.svg",
+      "description": "Pre-arrival teaser: 'Arriving Soon' window poster for the Immune Trio (D3 + C + Zinc), branded Go Vita Fremantle. Promotes new stock before it lands.",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "social-tile-immune-arriving-soon-fremantle",
+      "title": "Immune Trio 'Arriving Soon' social tile — Go Vita Fremantle",
+      "basedOn": "social-tile-immune",
+      "memberId": "GV-1012",
+      "store": "Go Vita Fremantle",
+      "format": "SVG (vector, 1:1 square)",
+      "file": "assets/marketing/social-tile-immune-arriving-soon-fremantle.svg",
+      "description": "Pre-arrival teaser social tile for the Immune Trio (D3 · C · Zinc), branded Go Vita Fremantle.",
+      "updated": "2026-10-12"
     }
   ],
   "testimonials": [
