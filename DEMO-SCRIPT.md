@@ -110,6 +110,7 @@ Quick tour of the three role pages + data on the live site (Tom's SO-24825 is ri
 
 ### Presenter notes
 - You only ever message Alice; Bob and Cindy stay behind the scenes.
+- Alice always acknowledges you immediately ("let me check that with accounts and come right back") before working the request in the background — so the member is never left waiting in silence.
 - Expect a brief clarifying/segue line from Alice — that's the "understands before acting" step; it demos well.
 - All figures above are computed from the live demo data and match what Bob/Cindy return.
 - Everything is one customer (Tom Harper, GV-1012) so the story builds end-to-end.
