@@ -12,7 +12,7 @@ to let the audience see the routing happen.
 
 **The journey:** new owner gets oriented → asks about products & price → places first order →
 is offered marketing to promote the new range → tracks the order → hits a back-order and sees it
-handled → close.
+handled → asks for a spring plan and gets stock advice + a campaign in one answer → close.
 
 ---
 
@@ -87,25 +87,51 @@ Victoria Park / Perth Metro **Mon 19 – Wed 21 Oct 2026** (5–7 business days)
 > **Prompt:** *"One more thing — I'd like to stock your BCAA electrolytes too. Can you add 20 cartons?"*
 
 **Expected:** Bob raises **SO-24826** — 20 cartons BCAA Electrolytes Berry (200 units), total
-**$3,474.24 inc GST** (Silver −6%, free freight) — and is upfront: the BCAA is a hot seller and is
-**currently out of stock**, so the whole order is on back-order and nothing can ship yet. Options:
-- (a) hold & ship complete when it lands — restock ETA ~Mon 26 Oct (free freight)
-- (b) substitute with in-stock ProFuel Creatine 300g ($14.20 ea Silver) — different product, only if it suits
-- **(c) recommended:** reserve & notify — priority-allocate the 200 units against the incoming batch,
-  auto-dispatch + alert the moment it arrives, so Tom is first in line
+**$3,474.24 inc GST** (Silver −6%, free freight). He's upfront: Berry is in high demand, so **only 8
+of the 20 cartons are in stock now**, the other 12 are due ~Mon 26 Oct. Three ways to handle it
+(all the same $3,474.24 — no penalty for choosing):
+- **(a) Hold & ship complete** — one delivery when all 20 are ready (~26 Oct).
+- **(b) Partial now + reserve:** ship the 8 in-stock cartons today ($1,389.70) and reserve &
+  auto-notify on the remaining 12 ($2,084.54 to follow); freight waived on both parts.
+- **(c) recommended — fully stocked today:** ship 8 cartons Berry + 12 cartons of the **Tropical
+  flavour** (same ProFuel BCAA electrolyte line, in stock) so all 20 land now; keep Berry on reserve
+  to top up next time if preferred.
 
-Alice relays honestly and recommends (c) (or (a) if he's happy to wait).
-**Why it lands** — *Board:* the hard case is handled honestly, not hidden — that's where trust is won.
-*Members:* proactive, no chasing, kept first in the queue.
+Alice relays honestly: (c) to have product on shelf for the season, or (b) if he wants Berry only.
+**Why it lands** — *Board:* the hard case is handled honestly with real choices, not hidden — that's
+where trust is won. *Members:* proactive, no chasing, fully stocked or first in the queue, no price penalty.
 
-> **Note for presenters:** order *only* the BCAA to get this pure back-order. If you instead order a
-> mix of in-stock + out-of-stock items, you'll see the alternative "ship the in-stock part now, rest
-> to follow, freight waived" handling — both are good; pick whichever story you want. Alice answers
-> whatever you actually order, not a fixed script.
+> **Note for presenters:** Alice answers whatever you actually order — not a fixed script. The close-match
+> substitute (Tropical) is the *same* electrolyte line, so there's no "it's a different product" caveat.
 
 ---
 
-## 6 · Close (2 min)
+## 6 · Spring best-sellers + campaign — Alice → Bob **and** Cindy (4 min)  ⭐ orchestration finale
+**Exercises:** Alice splits one question across BOTH specialists and combines the answers — Bob
+(sales-volume recommendation) + Cindy (marketing content + campaign structure).
+
+> **Prompt:** *"Spring's coming up — what are the best sellers for the season? Based on my store's previous sales volumes, what would you recommend, and what marketing would I need?"*
+
+**Expected:** Alice acknowledges, then asks **Bob** for Tom's sales profile + a stock recommendation
+and **Cindy** for the marketing, and combines them into one plan:
+- **Bob (from `/data/sales-history.json`):** Tom's trailing-12-month profile for Go Vita Victoria Park
+  (6,260 units — Vitamins 30%, Immune 23%, Sports 16% & growing, Organic 12%, Herbal 9%, Weight Mgmt
+  6.5% under-indexed). Spring reorder recommendation as winter immunity eases — lean into detox /
+  pre-summer / outdoor season: SlimLine Green Tea Metabolism, SlimLine Meal Replacement, FloraBalance
+  Probiotic, NutriSeed Chia, ProFuel Whey, keep Vitamin C deep for hayfever. **Suggested spring
+  reorder ≈ $3,656.64 inc GST.**
+- **Cindy (from `/data/spring-campaign.json`):** a phased **Spring Reset** campaign — tease
+  (ARRIVING SOON) → launch (window poster, web banner, shelf-talkers, social tiles, Go Mag + Rewards
+  double-points) → sustain (rotating staff-pick shelf-talkers + 2–3 socials/wk) → cross-sell/wind-down,
+  with Tom's top sellers mapped into the hero categories and sample copy / #GoVitaWellness.
+
+Alice delivers one combined plan: *what to stock* (Bob) **and** *how to promote it* (Cindy).
+**Why it lands** — *Board:* two specialists, one seamless answer — data-driven buying plus ready-made
+promotion, orchestrated behind a single contact. *Members:* "tell me what to stock AND how to sell it," done.
+
+---
+
+## 7 · Close (2 min)
 Quick tour of the three role pages + data on the live site (Tom's SO-24825 is right there), then recap:
 - **One front door**, 24/7, scaling to all 110+ stores
 - **Honest, tier-aware** advice, pricing and order capture
