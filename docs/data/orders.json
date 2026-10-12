@@ -88,49 +88,49 @@
       "itemCount": 30
     },
     {
-      "orderId": "SO-24823",
+      "orderId": "SO-24825",
       "memberId": "GV-1012",
       "store": "Go Vita Fremantle",
       "state": "WA",
       "tier": "Silver",
       "orderDate": "2026-10-12",
-      "deliveryStatus": "Processing",
-      "carrier": null,
-      "tracking": null,
+      "deliveryStatus": "Dispatched",
+      "carrier": "StarTrack",
+      "tracking": "ST4472651AU",
       "lineItems": [
-        { "sku": "GV-VIT-0102", "name": "VitaWell Vitamin D3 1000IU 250 caps", "category": "Vitamins & Supplements", "qty": 120, "unitWholesale": 12.9, "lineTotal": 1548 },
-        { "sku": "GV-VIT-0103", "name": "VitaWell High-Strength Vitamin C 1000mg 90 tabs", "category": "Vitamins & Supplements", "qty": 80, "unitWholesale": 9.75, "lineTotal": 780 }
+        { "sku": "GV-VIT-0102", "name": "VitaWell Vitamin D3 1000IU 250 caps", "category": "Vitamins & Supplements", "qty": 90, "unitWholesale": 12.9, "lineTotal": 1161 },
+        { "sku": "GV-VIT-0103", "name": "VitaWell High-Strength Vitamin C 1000mg 90 tabs", "category": "Vitamins & Supplements", "qty": 80, "unitWholesale": 9.75, "lineTotal": 780 },
+        { "sku": "GV-VIT-0104", "name": "VitaWell Zinc Picolinate 25mg 100 caps", "category": "Vitamins & Supplements", "qty": 64, "unitWholesale": 8.4, "lineTotal": 537.6 }
       ],
-      "subtotalExGst": 2328,
+      "subtotalExGst": 2478.6,
       "tierDiscountPct": 6,
-      "tierDiscount": 139.68,
+      "tierDiscount": 148.72,
       "freight": 0,
-      "gst": 218.83,
-      "totalIncGst": 2407.15,
-      "itemCount": 200
+      "gst": 232.99,
+      "totalIncGst": 2562.87,
+      "itemCount": 234
     },
     {
-      "orderId": "SO-24822",
+      "orderId": "SO-24826",
       "memberId": "GV-1012",
       "store": "Go Vita Fremantle",
       "state": "WA",
       "tier": "Silver",
-      "orderDate": "2026-10-10",
-      "deliveryStatus": "Processing",
+      "orderDate": "2026-10-12",
+      "deliveryStatus": "Back-order",
       "carrier": null,
       "tracking": null,
       "lineItems": [
-        { "sku": "GV-ORG-0301", "name": "PureHarvest Organic Rolled Oats 1kg", "category": "Organic & Whole Foods", "qty": 24, "unitWholesale": 4.2, "lineTotal": 100.8 },
-        { "sku": "GV-ORG-0303", "name": "NutriSeed Organic Chia Seeds 500g", "category": "Organic & Whole Foods", "qty": 12, "unitWholesale": 5.4, "lineTotal": 64.8 },
-        { "sku": "GV-BTY-0601", "name": "NaturaGlow Rosehip Oil 30ml", "category": "Natural Beauty & Skincare", "qty": 12, "unitWholesale": 8.9, "lineTotal": 106.8 }
+        { "sku": "GV-SPT-0404", "name": "ProFuel BCAA Electrolytes Berry 400g", "category": "Sports Nutrition", "qty": 20, "unitWholesale": 16.8, "lineTotal": 336 },
+        { "sku": "GV-SPT-0402", "name": "ProFuel Plant Protein Chocolate 1kg", "category": "Sports Nutrition", "qty": 8, "unitWholesale": 30.5, "lineTotal": 244 }
       ],
-      "subtotalExGst": 272.4,
+      "subtotalExGst": 580,
       "tierDiscountPct": 6,
-      "tierDiscount": 16.34,
-      "freight": 15,
-      "gst": 27.11,
-      "totalIncGst": 298.17,
-      "itemCount": 48
+      "tierDiscount": 34.8,
+      "freight": 0,
+      "gst": 54.52,
+      "totalIncGst": 599.72,
+      "itemCount": 28
     },
     {
       "orderId": "SO-24744",
