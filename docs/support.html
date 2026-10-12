@@ -83,7 +83,49 @@
       <div class="step"><div class="s-body"><strong>Reply.</strong> You get one clear, friendly answer from me.</div></div>
     </div>
 
-    <h2>Member directory</h2>
+    <h2>Support operations &mdash; oversight view</h2>
+    <p class="lede">A snapshot of the member-support function for whoever oversees it &mdash; volumes,
+       where enquiries go, how responsive we are, and what members are asking about.
+       <span class="badge grey" id="ops-period">loading&hellip;</span></p>
+
+    <div class="grid cols-3" id="ops-kpis"></div>
+
+    <h3 style="margin-top:30px">Where enquiries go</h3>
+    <div class="table-wrap">
+      <table id="ops-routing">
+        <thead><tr><th>Destination</th><th>Handled by</th><th>Volume (MTD)</th><th>Share</th></tr></thead>
+        <tbody><tr><td colspan="4">Loading&hellip;</td></tr></tbody>
+      </table>
+    </div>
+
+    <div class="grid cols-2" style="margin-top:18px">
+      <div class="card">
+        <h3>Current status</h3>
+        <div class="pill-row" id="ops-status"></div>
+        <p class="who" style="margin-top:10px">Open items are actively being worked; nothing is sitting unattended.</p>
+      </div>
+      <div class="card">
+        <h3>Top enquiry categories (MTD)</h3>
+        <div id="ops-cats"></div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:30px">Recent enquiries</h3>
+    <div class="table-wrap">
+      <table id="ops-log">
+        <thead>
+          <tr><th>Ref</th><th>Time</th><th>Member</th><th>Store</th><th>Category</th><th>Routed to</th><th>1st resp</th><th>Resolution</th><th>Status</th></tr>
+        </thead>
+        <tbody><tr><td colspan="9">Loading enquiry log&hellip;</td></tr></tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:22px">
+      <strong>Demo note:</strong> All support metrics and enquiries shown here are fictional, generated
+      to illustrate the oversight view of the support function.
+    </div>
+
+    <h2 style="margin-top:44px">Member directory</h2>
     <p class="lede">The co-op members I support (demo data). Account specifics live with Bob;
        marketing history lives with Cindy.</p>
     <div class="table-wrap">
@@ -122,6 +164,70 @@
       .catch(() => {
         document.querySelector('#members tbody').innerHTML =
           '<tr><td colspan="5">Member directory unavailable.</td></tr>';
+      });
+
+    // ---- Support operations (oversight view) ----
+    const agentBadge = a => ({ Bob: 'green', Cindy: 'amber', Alice: 'grey' }[a] || 'grey');
+    const statusBadge = s => ({ 'Resolved': 'green', 'In progress': 'amber', 'Open': 'grey' }[s] || 'grey');
+
+    fetch('data/support-metrics.json')
+      .then(r => r.json())
+      .then(d => {
+        const k = d.kpis || {};
+        document.querySelector('#ops-period').textContent = d.period || '';
+
+        const tiles = [
+          ['Enquiries (MTD)', k.totalEnquiries],
+          ['Avg first response', k.avgFirstResponse],
+          ['Resolution rate', k.resolutionRate],
+          ['Member CSAT', k.csat],
+          ['Open right now', k.openNow],
+          ['SLA met', k.slaMet]
+        ];
+        document.querySelector('#ops-kpis').innerHTML = tiles.map(([label, val]) => `
+          <div class="card"><div class="kpi">${val ?? '—'}</div><div class="kpi-label">${label}</div></div>`).join('');
+
+        document.querySelector('#ops-routing tbody').innerHTML = (d.routing || []).map(r => `
+          <tr>
+            <td>${r.destination}</td>
+            <td><span class="badge ${agentBadge(r.agent)}">${r.agent}</span></td>
+            <td>${r.count}</td>
+            <td>${r.pct}%</td>
+          </tr>`).join('');
+
+        const st = d.status || {};
+        document.querySelector('#ops-status').innerHTML =
+          `<span class="badge grey">${st.open ?? 0} open</span>` +
+          `<span class="badge amber">${st.inProgress ?? 0} in progress</span>` +
+          `<span class="badge green">${st.resolvedMTD ?? 0} resolved (MTD)</span>`;
+
+        const maxCat = Math.max(1, ...(d.topCategories || []).map(c => c.count));
+        document.querySelector('#ops-cats').innerHTML = (d.topCategories || []).map(c => `
+          <div style="margin:8px 0">
+            <div style="display:flex;justify-content:space-between;font-size:0.9rem">
+              <span>${c.category}</span><span style="color:var(--muted)">${c.count}</span>
+            </div>
+            <div style="background:var(--gv-green-light);border-radius:6px;height:8px;margin-top:3px">
+              <div style="width:${Math.round(c.count / maxCat * 100)}%;background:var(--gv-leaf);height:8px;border-radius:6px"></div>
+            </div>
+          </div>`).join('');
+
+        document.querySelector('#ops-log tbody').innerHTML = (d.recentEnquiries || []).map(e => `
+          <tr>
+            <td><code class="inline">${e.id}</code></td>
+            <td>${e.time}</td>
+            <td><code class="inline">${e.memberId}</code></td>
+            <td>${e.store}</td>
+            <td>${e.category}</td>
+            <td><span class="badge ${agentBadge(e.routedTo)}">${e.routedTo}</span></td>
+            <td>${e.firstResponse}</td>
+            <td>${e.resolution}</td>
+            <td><span class="badge ${statusBadge(e.status)}">${e.status}</span></td>
+          </tr>`).join('');
+      })
+      .catch(() => {
+        document.querySelector('#ops-kpis').innerHTML =
+          '<div class="card">Support metrics unavailable.</div>';
       });
   </script>
 </body>

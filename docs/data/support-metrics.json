@@ -1,0 +1,45 @@
+{
+  "_comment": "Demo support-operations metrics for the Member Support function Alice runs. For a support/ops overseer (manager + board). All data fictional.",
+  "period": "October 2026 — month to date",
+  "generated": "2026-10-12",
+  "kpis": {
+    "totalEnquiries": 342,
+    "avgFirstResponse": "3m 12s",
+    "avgResolutionTime": "1h 52m",
+    "resolutionRate": "96%",
+    "csat": "4.8 / 5",
+    "openNow": 7,
+    "slaMet": "98%"
+  },
+  "routing": [
+    { "destination": "Handled directly by Alice", "agent": "Alice", "count": 128, "pct": 37 },
+    { "destination": "Accounts", "agent": "Bob", "count": 139, "pct": 41 },
+    { "destination": "Marketing", "agent": "Cindy", "count": 75, "pct": 22 }
+  ],
+  "status": { "open": 7, "inProgress": 11, "resolvedMTD": 324 },
+  "topCategories": [
+    { "category": "Order status & delivery", "count": 96 },
+    { "category": "Pricing & quotes", "count": 81 },
+    { "category": "Marketing assets", "count": 63 },
+    { "category": "New product / stock availability", "count": 42 },
+    { "category": "Account & billing", "count": 34 },
+    { "category": "Back-orders & exceptions", "count": 26 }
+  ],
+  "weeklyVolume": [
+    { "week": "Wk 1", "count": 74 },
+    { "week": "Wk 2", "count": 88 },
+    { "week": "Wk 3", "count": 96 },
+    { "week": "Wk 4 (MTD)", "count": 84 }
+  ],
+  "recentEnquiries": [
+    { "id": "ENQ-5012", "time": "09:14", "memberId": "GV-1012", "store": "Go Vita Fremantle", "category": "Product & pricing (multivitamin)", "routedTo": "Bob", "status": "Resolved", "firstResponse": "1m", "resolution": "14m" },
+    { "id": "ENQ-5013", "time": "09:40", "memberId": "GV-1012", "store": "Go Vita Fremantle", "category": "Marketing — promo assets", "routedTo": "Cindy", "status": "Resolved", "firstResponse": "2m", "resolution": "22m" },
+    { "id": "ENQ-5014", "time": "10:05", "memberId": "GV-1007", "store": "Go Vita Bondi Junction", "category": "Order status & delivery", "routedTo": "Bob", "status": "Resolved", "firstResponse": "1m", "resolution": "9m" },
+    { "id": "ENQ-5015", "time": "10:22", "memberId": "GV-1085", "store": "Go Vita Ballarat", "category": "Back-order query", "routedTo": "Bob", "status": "In progress", "firstResponse": "2m", "resolution": "—" },
+    { "id": "ENQ-5016", "time": "11:01", "memberId": "GV-1023", "store": "Go Vita Toowoomba", "category": "Seasonal marketing (Spring)", "routedTo": "Cindy", "status": "Resolved", "firstResponse": "3m", "resolution": "31m" },
+    { "id": "ENQ-5017", "time": "11:48", "memberId": "GV-1031", "store": "Go Vita Glenelg", "category": "How-to / general", "routedTo": "Alice", "status": "Resolved", "firstResponse": "1m", "resolution": "4m" },
+    { "id": "ENQ-5018", "time": "12:15", "memberId": "GV-1066", "store": "Go Vita Chatswood", "category": "Pricing — bulk honey", "routedTo": "Bob", "status": "Open", "firstResponse": "2m", "resolution": "—" },
+    { "id": "ENQ-5019", "time": "13:02", "memberId": "GV-1078", "store": "Go Vita Noosa", "category": "Logo pack request", "routedTo": "Cindy", "status": "Resolved", "firstResponse": "1m", "resolution": "12m" },
+    { "id": "ENQ-5020", "time": "13:30", "memberId": "GV-1012", "store": "Go Vita Fremantle", "category": "Delivery ETA (SO-24825)", "routedTo": "Bob", "status": "Resolved", "firstResponse": "1m", "resolution": "7m" }
+  ]
+}
